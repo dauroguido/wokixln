@@ -553,6 +553,200 @@ section > .wrap{max-width:var(--max-w);margin:0 auto}
 .annot .k{font-family:'Figtree';font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--woki-celeste);margin-bottom:4px}
 .annot p{font-family:'Figtree';font-size:14px;color:var(--ink-soft);line-height:1.5}
 
+/* ===== Section: Mock Marketplace (Woki B2C) ===== */
+.mock-marketplace .head{max-width:820px;margin-bottom:clamp(40px,6vh,64px)}
+.mock-marketplace .wk-frame{
+  max-width:1100px;margin:0 auto;
+  background:#fff;border-radius:20px;overflow:hidden;
+  border:1px solid var(--gray-line);
+  box-shadow:0 30px 80px -40px rgba(20,30,60,.35), 0 4px 12px -4px rgba(20,30,60,.06);
+}
+
+/* Woki topbar */
+.wk-topbar{
+  display:flex;align-items:center;gap:18px;
+  padding:18px 28px;border-bottom:1px solid #F1EDE8;background:#fff;
+}
+.wk-topbar .wk-logo{height:32px;width:auto;flex-shrink:0}
+.wk-topbar .wk-city{
+  display:flex;align-items:center;gap:6px;
+  font-family:'Figtree';font-size:14px;color:var(--ink);font-weight:500;
+}
+.wk-topbar .wk-city svg{width:14px;height:14px;stroke-width:2}
+.wk-topbar-right{margin-left:auto;display:flex;align-items:center;gap:18px}
+.wk-topbar .wk-resto{font-family:'Figtree';font-size:13px;color:var(--ink);font-weight:500}
+.wk-topbar .wk-user{
+  width:34px;height:34px;border-radius:50%;background:#3F4047;color:#fff;
+  display:grid;place-items:center;font-family:'Figtree';font-weight:700;font-size:12px;letter-spacing:.02em;
+}
+.wk-topbar .wk-lang{display:flex;align-items:center;gap:6px;font-family:'Figtree';font-size:12px;font-weight:600;color:var(--ink)}
+.wk-topbar .wk-lang .flag{
+  width:22px;height:22px;border-radius:50%;overflow:hidden;flex-shrink:0;
+  background:linear-gradient(180deg,#AA151B 33%,#F1BF00 33% 67%,#AA151B 67%);
+}
+
+/* Hero search */
+.wk-hero{padding:36px 28px 28px;text-align:center;background:#fff}
+.wk-hero h3{
+  font-family:'Mona Sans';font-weight:600;
+  font-size:clamp(1.6rem,2.6vw,2rem);
+  letter-spacing:-0.02em;color:var(--ink);
+}
+.wk-hero h3 em{font-style:normal;color:#F86704}
+.wk-search{
+  margin-top:22px;display:flex;align-items:center;gap:0;
+  background:#fff;border:1px solid #E4DFD9;border-radius:999px;
+  padding:6px 6px 6px 22px;max-width:880px;margin-left:auto;margin-right:auto;
+  box-shadow:0 6px 18px -10px rgba(20,30,60,.12);
+}
+.wk-search .field{flex:1;text-align:left;padding:10px 18px}
+.wk-search .field .k{font-family:'Figtree';font-size:11px;color:var(--gray-meta);font-weight:600;margin-bottom:2px}
+.wk-search .field .v{font-family:'Figtree';font-size:13px;color:var(--ink);font-weight:500}
+.wk-search .sep{width:1px;height:32px;background:#EAE5DE}
+.wk-search-btn{
+  width:46px;height:46px;border-radius:50%;background:#F86704;color:#fff;
+  display:grid;place-items:center;margin-left:8px;flex-shrink:0;
+  box-shadow:0 6px 14px -6px rgba(248,103,4,.55);
+}
+.wk-search-btn svg{width:18px;height:18px;stroke-width:2.2}
+
+/* Categories */
+.wk-cats{
+  display:flex;gap:6px;padding:18px 28px;border-top:1px solid #F1EDE8;border-bottom:1px solid #F1EDE8;
+  overflow-x:auto;scrollbar-width:none;background:#fff;
+}
+.wk-cats::-webkit-scrollbar{display:none}
+.wk-cats .cat{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  padding:8px 16px;min-width:88px;flex-shrink:0;
+  font-family:'Figtree';font-size:11.5px;color:var(--gray-meta);font-weight:500;
+  border-bottom:2px solid transparent;
+}
+.wk-cats .cat .ic{width:22px;height:22px;display:grid;place-items:center;color:#9aa0aa}
+.wk-cats .cat .ic svg{width:18px;height:18px;stroke-width:1.6}
+.wk-cats .cat.sel{color:#F86704;border-bottom-color:#F86704;font-weight:700}
+.wk-cats .cat.sel .ic{color:#F86704}
+
+/* Club LA NACION banner */
+.cln-banner{
+  display:flex;align-items:center;gap:24px;padding:18px 28px;
+  background:linear-gradient(90deg, #0E0F12 0%, #1A2F5A 100%);
+  color:#fff;
+}
+.cln-banner .logos{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.cln-banner .logos .ln-svg{height:30px;width:auto;color:#fff}
+.cln-banner .logos .x{font-family:'Mona Sans';font-weight:300;font-size:22px;opacity:.6}
+.cln-banner .logos .wk-svg{height:22px;width:auto}
+.cln-banner .text{flex:1;min-width:0}
+.cln-banner .text h4{
+  font-family:'Mona Sans';font-weight:600;font-size:16px;letter-spacing:-0.01em;color:#fff;
+  line-height:1.2;
+}
+.cln-banner .text p{
+  font-family:'Figtree';font-size:12.5px;color:rgba(255,255,255,.78);
+  margin-top:3px;line-height:1.4;
+}
+.cln-banner .ver{
+  font-family:'Figtree';font-weight:600;font-size:12.5px;color:#fff;
+  text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:4px;
+  padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.12);
+}
+.cln-banner .ver svg{width:13px;height:13px}
+
+/* Restaurant cards grid */
+.wk-cards{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
+  padding:24px 28px 28px;background:#fff;
+}
+.wk-card{
+  background:#fff;border-radius:14px;overflow:hidden;
+  border:1px solid #F1EDE8;
+  display:flex;flex-direction:column;
+}
+.wk-card .img-wrap{position:relative;aspect-ratio:4/3;overflow:hidden;background:#1a1a1d}
+.wk-card .img-wrap img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  background:linear-gradient(135deg,#3a2410,#2a1a0a);
+}
+.wk-card .heart{
+  position:absolute;top:10px;right:10px;
+  width:30px;height:30px;border-radius:50%;background:#fff;
+  display:grid;place-items:center;box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.wk-card .heart svg{width:15px;height:15px;color:var(--ink);stroke-width:1.8;fill:none}
+.wk-card .cln-sticker{
+  position:absolute;top:10px;left:10px;
+  display:flex;align-items:center;gap:6px;
+  background:#0E0F12;color:#fff;
+  padding:5px 9px 5px 7px;border-radius:6px;
+  font-family:'Figtree';font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  box-shadow:0 4px 12px -4px rgba(0,0,0,.4);
+}
+.wk-card .cln-sticker .ln-mini{height:14px;width:auto;color:#fff}
+.wk-card .cln-sticker .pct{background:#F86704;color:#fff;padding:2px 5px;border-radius:3px;font-weight:800;letter-spacing:.04em}
+.wk-card .img-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:4px;z-index:2}
+.wk-card .img-dots i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.5)}
+.wk-card .img-dots i.on{background:#fff;width:6px;height:6px}
+
+.wk-card .info{padding:14px 16px 16px}
+.wk-card .info h4{
+  font-family:'Mona Sans';font-weight:600;font-size:15px;color:var(--ink);
+  letter-spacing:-0.01em;line-height:1.2;
+}
+.wk-card .info .meta{
+  display:flex;align-items:center;gap:6px;margin-top:6px;
+  font-family:'Figtree';font-size:12px;color:var(--gray-meta);
+}
+.wk-card .info .meta .rating{
+  display:inline-flex;align-items:center;gap:4px;
+  background:#fff;color:#F86704;border:1px solid #FCE0CC;
+  padding:2px 7px;border-radius:6px;font-weight:700;font-size:11.5px;
+}
+.wk-card .info .meta .rating svg{width:11px;height:11px;stroke-width:0;fill:currentColor}
+.wk-card .info .meta .reviews{color:var(--gray-meta);font-weight:500;font-size:11.5px}
+.wk-card .info .meta .price{color:var(--ink);font-weight:600;font-size:11.5px}
+.wk-card .quedan{
+  display:flex;align-items:center;gap:5px;margin-top:8px;
+  font-family:'Figtree';font-size:11.5px;color:#F86704;font-weight:600;
+}
+.wk-card .quedan svg{width:12px;height:12px;stroke-width:2}
+.wk-card .slots{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:10px}
+.wk-card .slot{
+  background:#fff;border:1px solid #E4DFD9;border-radius:8px;
+  padding:7px 4px;text-align:center;
+}
+.wk-card .slot .hr{font-family:'Figtree';font-size:11px;color:var(--ink);font-weight:600;line-height:1.1}
+.wk-card .slot .ok{font-family:'Figtree';font-size:8px;color:#0F7B3A;font-weight:800;letter-spacing:.08em;margin-top:3px}
+
+@media (max-width:1100px){
+  .wk-cards{grid-template-columns:repeat(3,1fr)}
+  .wk-cards .wk-card:nth-child(4){display:none}
+}
+@media (max-width:820px){
+  .wk-cards{grid-template-columns:repeat(2,1fr)}
+  .wk-cards .wk-card:nth-child(4){display:flex}
+  .cln-banner{flex-direction:column;align-items:flex-start;gap:14px}
+  .wk-search{padding:8px 8px 8px 14px}
+  .wk-search .field{padding:6px 10px}
+  .wk-search .field .v{font-size:11.5px}
+  .wk-topbar{padding:14px 16px;gap:10px;flex-wrap:wrap}
+  .wk-topbar-right{gap:10px}
+  .wk-topbar .wk-resto{display:none}
+}
+@media (max-width:540px){
+  .wk-cards{grid-template-columns:1fr;padding:18px}
+  .wk-cards .wk-card:nth-child(n+3){display:none}
+  .wk-hero{padding:24px 18px 22px}
+  .wk-hero h3{font-size:1.4rem}
+  .wk-search{flex-wrap:wrap;border-radius:18px;padding:10px}
+  .wk-search .sep{display:none}
+  .wk-search .field{flex:1 0 calc(50% - 10px);padding:8px 10px}
+  .wk-search-btn{margin-left:auto}
+  .cln-banner{padding:14px 18px}
+  .cln-banner .logos .ln-svg{height:24px}
+  .cln-banner .text h4{font-size:14px}
+}
+
 /* ===== Section: Ganadores ===== */
 .ganadores .head{max-width:780px;margin-bottom:clamp(40px,6vh,64px)}
 .ganadores .grid{
@@ -740,6 +934,7 @@ svg.ln-svg path{fill:currentColor}
       <a href="#problema">Problema</a>
       <a href="#mock-cliente">Experiencia del socio</a>
       <a href="#mock-admin">Experiencia del resto</a>
+      <a href="#mock-marketplace">Marketplace</a>
       <a href="#ganadores">Valor</a>
       <a href="#plan">Plan</a>
       <a href="#modelo">Modelo</a>
@@ -784,6 +979,22 @@ svg.ln-svg path{fill:currentColor}
       <path fill="url(#b2b-grad)" d="M69.97,2.86s0,0,0,0h0s-.14-.4-.14-.4c0,0,0,0,0,0,0,0,0,0,0,0l-.03-.09s0,0,0,0c-.03-.07-.07-.14-.11-.21h0s-.02-.03-.03-.05c-.03-.05-.07-.11-.1-.16-.02-.03-.05-.07-.07-.1-.01-.02-.03-.04-.05-.06-.02-.03-.05-.07-.08-.1-.05-.07-.11-.13-.17-.19-.02-.02-.04-.05-.07-.07-.04-.04-.08-.07-.12-.11,0,0,0,0,0,0-.04-.03-.07-.06-.11-.09-.04-.03-.08-.07-.12-.1-.04-.03-.09-.06-.13-.09-.03-.02-.05-.04-.08-.05-.03-.02-.05-.03-.08-.05-.01,0-.02-.01-.04-.02-.01,0-.02-.01-.04-.02,0,0-.01,0-.02-.01-.02-.01-.04-.03-.07-.04,0,0-.01,0-.02-.01-.02-.01-.04-.02-.06-.03-.04-.02-.07-.04-.11-.05,0,0-.02,0-.03-.01-.02,0-.03-.01-.04-.02,0,0,0,0,0,0-.06-.02-.11-.05-.17-.07-.05-.02-.11-.04-.16-.05-.04-.01-.07-.02-.11-.03-.02,0-.03,0-.05-.01-.05-.01-.11-.03-.16-.04-.05,0-.09-.02-.14-.03-.02,0-.03,0-.05,0-.05,0-.1-.01-.15-.02-.06,0-.12-.01-.17-.01h0c-.06,0-.12,0-.18,0h-9.89c-1.89,0-3.43,1.54-3.43,3.43,0,.21.02.42.06.63.03.15.07.3.11.45,0,0,0,0,0,.01l.06.16s0,.01,0,.02l3.53,9.67s0,.01,0,.02c.01.04.03.08.04.12,0,0,0,.01,0,.02.02.04.03.09.05.13h0s.01.03.01.03c.53,1.25,1.77,2.13,3.21,2.13,1.08,0,2.05-.49,2.69-1.27,0,0,.01-.01.02-.02.14-.19.26-.4.36-.61.03-.06.05-.12.08-.18.07-.16.14-.31.21-.47,1.3-2.88,2.96-5.56,4.92-7.99.19-.23.38-.47.57-.69.49-.59.78-1.34.78-2.17,0-.33-.05-.65-.14-.96Z"/>
       <path fill="url(#b2b-grad)" d="M57.16,42.98c0,.22,0,.43-.02.64h0c-.21,3.77-2.24,7.06-5.23,8.99-1.19.77-2.53,1.32-3.96,1.61-.22.04-.45.07-.69.07-1.11,0-2.03-.4-2.68-1.3-.28-.38-.6-1.15-.6-1.15l-6.24-17.11L26.93,5.11s0-.01,0-.02l-.06-.16s0,0,0-.01c-.05-.14-.09-.29-.11-.45-.04-.2-.06-.41-.06-.63,0-1.89,1.53-3.43,3.43-3.43h9.88c1.36,0,2.53.79,3.09,1.94,0,0,0,0,0,0l.23.64s0,0,0,0c0,0,0,0,0,0h0s13.33,36.58,13.35,36.65h0c.32,1.05.49,2.17.49,3.33Z"/>
       <path fill="url(#b2b-grad)" d="M30.47,42.98c0,.22,0,.43-.02.64h0c-.21,3.77-2.24,7.06-5.23,8.99-1.19.77-2.53,1.32-3.96,1.61-.22.04-.45.07-.69.07-1.11,0-2.03-.4-2.68-1.3-.28-.38-.6-1.15-.6-1.15l-6.24-17.11L.24,5.11s0-.01,0-.02l-.06-.16s0,0,0-.01c-.05-.14-.09-.29-.11-.45-.04-.2-.06-.41-.06-.63C0,1.95,1.53.41,3.43.41h9.88c1.36,0,2.53.79,3.09,1.94,0,0,0,0,0,0l.23.64s0,0,0,0c0,0,0,0,0,0h0s13.33,36.58,13.35,36.65h0c.32,1.05.49,2.17.49,3.33Z"/>
+    </g>
+    <!-- Woki B2C (consumer / orange) -->
+    <g id="woki-b2c-paths">
+      <defs>
+        <linearGradient id="b2c-grad" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#BA1919"/>
+          <stop offset="1" stop-color="#F86704"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#b2c-grad)" d="M175.81,47.39c.2.43.3.91.3,1.42,0,1.9-1.53,3.45-3.43,3.46-.01,0-.02,0-.03,0h-9.29c-1.35,0-2.51-.77-3.08-1.89l-5.02-11.89-1.37-3.26c-.16-.42-.32-.85-.45-1.28-.87-2.68-1.31-5.46-1.32-8.24,0-2.92.5-5.84,1.45-8.63h0c.47-1.68,2.57-6.04,4.39-9.64l.81-1.59c.56-1.11,1.06-2.08,1.43-2.77.16-.3.28-.55.38-.73,0,0,.18-.34.19-.36,0,0,0,0,0,0,.61-1,1.71-1.67,2.96-1.67h8.98s.02,0,.03,0c1.9.02,3.43,1.56,3.43,3.46,0,.32-.04.63-.13.93l-8.69,17.54h0s0,0,0,0c0,0,0,0,0,0h0s-.03.06-.05.11c-.29.62-1.49,3.54-.27,7l.17.42.58,1.39,7.9,15.99s.11.23.11.23Z"/>
+      <path fill="url(#b2c-grad)" d="M123.36,25c-.1-1.16-.27-2.33-.52-3.46-.25-1.18-.58-2.33-.98-3.47-.28-.8-.61-1.6-.97-2.38-.17-.36-.35-.72-.54-1.09-.62-1.2-1.34-2.37-2.15-3.46-.26-.35-.52-.7-.79-1.03-.28-.35-.57-.68-.87-1.01-.43-.49-.89-.97-1.36-1.42-.4-.39-.83-.78-1.25-1.14-1-.85-2.06-1.63-3.17-2.31-.1-.08-.21-.14-.31-.19-1.11-.69-2.28-1.28-3.48-1.8-1.12-.49-2.29-.89-3.48-1.22-.34-.09-.69-.18-1.02-.26-.61-.14-1.22-.26-1.82-.36-.21-.04-.41-.07-.63-.09-1.15-.17-2.31-.25-3.48-.26-1.15,0-2.31.06-3.46.21-.96.12-1.91.28-2.86.5-.21.04-.41.09-.62.14-1.19.31-2.35.68-3.48,1.15-1.12.45-2.22,1-3.28,1.6-.06.03-.13.06-.19.1-.26.15-.5.3-.75.47-.94.59-1.86,1.25-2.73,1.97-.58.47-1.14.97-1.67,1.49-.63.62-1.24,1.25-1.81,1.93-.43.5-.83,1.01-1.22,1.54-.8,1.1-1.53,2.26-2.16,3.46-.04.07-.06.13-.1.19-.43.84-.81,1.71-1.16,2.6-.08.22-.17.45-.25.67-.4,1.14-.74,2.29-.98,3.47-.23,1.14-.41,2.3-.5,3.46-.09,1.15-.1,2.3-.05,3.47.05,1.16.18,2.31.39,3.47.21,1.16.49,2.33.85,3.46.01.04.03.08.04.12.36,1.15.81,2.26,1.33,3.34.1.25.22.48.34.71.49.94,1.03,1.87,1.64,2.75.56.85,1.18,1.65,1.84,2.43.3.35.61.7.93,1.03.79.85,1.64,1.64,2.55,2.38.47.37.93.74,1.41,1.09.32.23.65.45.97.66.36.23.72.47,1.1.67,1.11.66,2.28,1.23,3.48,1.72.36.14.72.28,1.09.41.79.28,1.59.52,2.39.72,1.14.3,2.3.52,3.48.66,1.09.13,2.17.19,3.27.19h.19c.87,0,1.75-.05,2.61-.14.28-.03.58-.06.87-.1,1.18-.17,2.34-.4,3.48-.71.66-.18,1.31-.39,1.94-.62.52-.18,1.03-.39,1.54-.59,1.2-.52,2.37-1.11,3.48-1.8.56-.34,1.1-.7,1.63-1.07.63-.45,1.25-.93,1.85-1.45.54-.45,1.06-.93,1.56-1.43.19-.19.37-.39.56-.58.48-.49.93-1.01,1.36-1.54.5-.62.98-1.27,1.42-1.93.74-1.1,1.4-2.25,1.98-3.47l.08-.16c.26-.57.5-1.15.74-1.74.19-.52.37-1.03.54-1.55.36-1.14.65-2.3.85-3.46.21-1.15.34-2.3.39-3.47.04-.87.04-1.73,0-2.6-.01-.28-.04-.58-.05-.87ZM96.43,39.48c-6.72,0-12.17-5.44-12.17-12.17s5.44-12.17,12.17-12.17,12.17,5.44,12.17,12.17-5.44,12.17-12.17,12.17Z"/>
+      <path fill="url(#b2c-grad)" d="M147.11,4.02v45.04c0,1.9-1.53,3.45-3.43,3.46-.01,0-.02,0-.03,0h-9.14c-1.35,0-2.51-.77-3.08-1.89-.06-.12-.12-.25-.17-.39l-.02-.07c-.08-.23-.13-.47-.16-.72-.02-.13-.02-.26-.02-.4V4.02c0-.13,0-.27.02-.4.04-.36.14-.71.28-1.02,0,0,0,0,0,0,.06-.12.12-.24.19-.36,0,0,0,0,0,0,.61-1,1.71-1.67,2.96-1.67h9.14s.02,0,.03,0c1.9.02,3.43,1.56,3.43,3.46Z"/>
+      <path fill="url(#b2c-grad)" d="M200.87,3.46v45.04c0,1.9-1.53,3.45-3.43,3.46-.01,0-.02,0-.03,0h-9.14c-1.35,0-2.51-.77-3.08-1.89-.06-.12-.12-.25-.17-.39l-.02-.07c-.08-.23-.13-.47-.16-.72-.02-.13-.02-.26-.02-.4V3.46c0-.13,0-.27.02-.4.04-.36.14-.71.28-1.02,0,0,0,0,0,0,.06-.12.12-.24.19-.36,0,0,0,0,0,0,.61-1,1.71-1.67,2.96-1.67h9.14s.02,0,.03,0c1.9.02,3.43,1.56,3.43,3.46Z"/>
+      <path fill="url(#b2c-grad)" d="M69.41,2.84s0,0,0,0h0s-.14-.4-.14-.4c0,0,0,0,0,0,0,0,0,0,0,0l-.03-.09s0,0,0,0c-.03-.07-.07-.14-.11-.21h0s-.02-.03-.03-.05c-.03-.05-.07-.11-.1-.16-.02-.03-.05-.07-.07-.1-.01-.02-.03-.04-.05-.06-.02-.03-.05-.07-.08-.1-.05-.07-.11-.13-.17-.19-.02-.02-.04-.05-.07-.07-.04-.04-.07-.07-.11-.11,0,0,0,0,0,0-.04-.03-.07-.06-.11-.09-.04-.03-.08-.07-.12-.1-.04-.03-.08-.06-.13-.09-.03-.02-.05-.04-.08-.05-.03-.02-.05-.03-.08-.05-.01,0-.02-.01-.04-.02-.01,0-.02-.01-.04-.02,0,0-.01,0-.02-.01-.02-.01-.04-.03-.07-.04,0,0-.01,0-.02-.01-.02-.01-.04-.02-.06-.03-.04-.02-.07-.04-.11-.05,0,0-.02,0-.03-.01-.02,0-.03-.01-.04-.02,0,0,0,0,0,0-.06-.02-.11-.05-.17-.07-.05-.02-.11-.04-.16-.05-.04-.01-.07-.02-.11-.03-.02,0-.03,0-.05-.01-.05-.01-.11-.03-.16-.04-.05,0-.09-.02-.14-.03-.02,0-.03,0-.05,0-.05,0-.1-.01-.15-.02-.06,0-.11-.01-.17-.01h0c-.06,0-.12,0-.18,0h-9.81c-1.88,0-3.4,1.52-3.4,3.4,0,.21.02.42.06.62.03.15.07.3.11.45,0,0,0,0,0,.01l.06.16s0,.01,0,.02l3.5,9.59s0,.01,0,.02c.01.04.03.08.04.12,0,0,0,.01,0,.02.02.04.03.09.05.13h0s.01.03.01.03c.53,1.24,1.75,2.11,3.19,2.11,1.07,0,2.03-.49,2.67-1.26,0,0,.01-.01.02-.02.14-.19.26-.39.36-.61.03-.06.05-.12.08-.18.07-.16.14-.31.21-.47,1.29-2.86,2.94-5.52,4.88-7.92.19-.23.38-.46.57-.69.48-.58.77-1.33.77-2.15,0-.33-.05-.65-.14-.95Z"/>
+      <path fill="url(#b2c-grad)" d="M56.7,42.64c0,.21,0,.43-.02.64h0c-.21,3.74-2.22,7.01-5.19,8.92-1.18.76-2.51,1.31-3.93,1.59-.22.04-.45.07-.69.07-1.1,0-2.01-.4-2.66-1.29-.28-.38-.6-1.14-.6-1.14l-6.19-16.98L26.71,5.07s0-.01,0-.02l-.06-.16s0,0,0-.01c-.05-.14-.09-.29-.11-.45-.04-.2-.06-.41-.06-.62,0-1.88,1.52-3.4,3.4-3.4h9.8c1.35,0,2.51.78,3.06,1.92,0,0,0,0,0,0l.23.64s0,0,0,0c0,0,0,0,0,0h0s13.23,36.28,13.25,36.36h0c.32,1.05.49,2.15.49,3.3Z"/>
+      <path fill="url(#b2c-grad)" d="M30.23,42.64c0,.21,0,.43-.02.64h0c-.21,3.74-2.22,7.01-5.19,8.92-1.18.76-2.51,1.31-3.93,1.59-.22.04-.45.07-.69.07-1.1,0-2.01-.4-2.66-1.29-.28-.38-.6-1.14-.6-1.14l-6.19-16.98L.24,5.07s0-.01,0-.02l-.06-.16s0,0,0-.01c-.05-.14-.09-.29-.11-.45-.04-.2-.06-.41-.06-.62C0,1.93,1.52.41,3.4.41h9.8c1.35,0,2.51.78,3.06,1.92,0,0,0,0,0,0l.23.64s0,0,0,0c0,0,0,0,0,0h0s13.23,36.28,13.25,36.36h0c.32,1.05.49,2.15.49,3.3Z"/>
     </g>
   </defs>
 </svg>
@@ -1064,6 +1275,185 @@ svg.ln-svg path{fill:currentColor}
           <div class="k">Acciones operativas</div>
           <p>Mesa preferencial, mensaje pre-llegada. El equipo recibe al socio listo, no improvisando.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MOCKUP MARKETPLACE (Woki x Club LA NACION dentro de wokiapp.com) ====== -->
+<section class="mock-marketplace" id="mock-marketplace">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Distribución bidireccional</div>
+      <h2 class="h-section" style="margin-top:14px;max-width:24ch">El Club LA NACION también vive dentro de Woki.</h2>
+      <p class="h-sub" style="margin-top:18px;color:var(--gray-meta);max-width:60ch">Cada socio que entra a wokiapp.com a buscar restaurante encuentra una sección curada con los beneficios del Club LA NACION ya activos.</p>
+    </div>
+
+    <div class="wk-frame">
+      <div class="b-chrome">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <div class="url"><b>wokiapp.com</b></div>
+      </div>
+
+      <div class="wk-topbar">
+        <svg class="wk-logo" viewBox="0 0 200.87 54.28" aria-label="Woki"><use href="#woki-b2c-paths"/></svg>
+        <span class="wk-city">Ciudad de Buenos Aires <i data-lucide="chevron-down"></i></span>
+        <div class="wk-topbar-right">
+          <span class="wk-resto">¿Tienes un restaurante?</span>
+          <span class="wk-user">GD</span>
+          <span class="wk-lang"><span class="flag"></span>ES</span>
+        </div>
+      </div>
+
+      <div class="wk-hero">
+        <h3>Explora <em>Ciudad de Buenos Aires</em></h3>
+        <div class="wk-search">
+          <div class="field"><div class="k">¿Qué buscas?</div><div class="v">Restaurante, Ubicación, Filtros</div></div>
+          <div class="sep"></div>
+          <div class="field"><div class="k">¿Cuándo?</div><div class="v">Mar, 26 may (Hoy)</div></div>
+          <div class="sep"></div>
+          <div class="field"><div class="k">¿A qué hora?</div><div class="v">21:00 hs</div></div>
+          <div class="sep"></div>
+          <div class="field"><div class="k">¿Cuántos?</div><div class="v">4 personas</div></div>
+          <button class="wk-search-btn"><i data-lucide="search"></i></button>
+        </div>
+      </div>
+
+      <div class="wk-cats">
+        <div class="cat"><div class="ic"><i data-lucide="star"></i></div>Mejor calificados</div>
+        <div class="cat"><div class="ic"><i data-lucide="map-pin"></i></div>Más cercanos</div>
+        <div class="cat"><div class="ic"><i data-lucide="trophy"></i></div>Premiados</div>
+        <div class="cat sel"><div class="ic"><i data-lucide="badge-percent"></i></div>Descuento</div>
+        <div class="cat"><div class="ic"><i data-lucide="users"></i></div>Salidas en grupo</div>
+        <div class="cat"><div class="ic"><i data-lucide="moon"></i></div>Nocturnas</div>
+        <div class="cat"><div class="ic"><i data-lucide="dollar-sign"></i></div>Económico</div>
+      </div>
+
+      <div class="cln-banner">
+        <div class="logos">
+          <svg class="ln-svg" viewBox="730 360 510 290" style="color:#fff"><use href="#ln-logo-paths"/></svg>
+          <span class="x">×</span>
+          <svg class="wk-svg" viewBox="0 0 200.87 54.28"><use href="#woki-b2c-paths"/></svg>
+        </div>
+        <div class="text">
+          <h4>Beneficios para socios del Club LA NACION</h4>
+          <p>20% off en restaurantes adheridos, con tu credencial validada y aplicada al reservar.</p>
+        </div>
+        <a class="ver" href="#">Ver todos <i data-lucide="arrow-right"></i></a>
+      </div>
+
+      <div class="wk-cards">
+        <!-- 1. CARMEN PASTA -->
+        <article class="wk-card">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600&h=450&fit=crop&auto=format&q=80" alt="Carmen Pasta" loading="lazy">
+            <div class="cln-sticker">
+              <svg class="ln-mini" viewBox="730 360 510 290" style="color:#fff"><use href="#ln-logo-paths"/></svg>
+              <span class="pct">20%</span>
+            </div>
+            <button class="heart" aria-label="Guardar"><i data-lucide="heart"></i></button>
+            <div class="img-dots"><i class="on"></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="info">
+            <h4>Carmen Pasta</h4>
+            <div class="meta">
+              <span class="rating"><i data-lucide="star"></i>5.0</span>
+              <span class="reviews">(8)</span>
+              <span>·</span>
+              <span class="price">$$ · Italiana</span>
+            </div>
+            <div class="quedan"><i data-lucide="clock"></i>Quedan 13 lugares!</div>
+            <div class="slots">
+              <div class="slot"><div class="hr">20:00 hs</div><div class="ok">HAY LUGAR</div></div>
+              <div class="slot"><div class="hr">20:15 hs</div><div class="ok">HAY LUGAR</div></div>
+              <div class="slot"><div class="hr">20:30 hs</div><div class="ok">HAY LUGAR</div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. EMPERADOR MEIJI -->
+        <article class="wk-card">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&h=450&fit=crop&auto=format&q=80" alt="Emperador Meiji" loading="lazy">
+            <div class="cln-sticker">
+              <svg class="ln-mini" viewBox="730 360 510 290" style="color:#fff"><use href="#ln-logo-paths"/></svg>
+              <span class="pct">20%</span>
+            </div>
+            <button class="heart" aria-label="Guardar"><i data-lucide="heart"></i></button>
+            <div class="img-dots"><i class="on"></i><i></i><i></i></div>
+          </div>
+          <div class="info">
+            <h4>Emperador Meiji</h4>
+            <div class="meta">
+              <span class="rating"><i data-lucide="star"></i>4.9</span>
+              <span class="reviews">(12)</span>
+              <span>·</span>
+              <span class="price">$$$ · Japonesa</span>
+            </div>
+            <div class="quedan"><i data-lucide="clock"></i>Quedan 8 lugares!</div>
+            <div class="slots">
+              <div class="slot"><div class="hr">21:00 hs</div><div class="ok">HAY LUGAR</div></div>
+              <div class="slot"><div class="hr">21:30 hs</div><div class="ok">HAY LUGAR</div></div>
+              <div class="slot"><div class="hr">22:00 hs</div><div class="ok">HAY LUGAR</div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. ALBUR -->
+        <article class="wk-card">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=450&fit=crop&auto=format&q=80" alt="Albur" loading="lazy">
+            <div class="cln-sticker">
+              <svg class="ln-mini" viewBox="730 360 510 290" style="color:#fff"><use href="#ln-logo-paths"/></svg>
+              <span class="pct">20%</span>
+            </div>
+            <button class="heart" aria-label="Guardar"><i data-lucide="heart"></i></button>
+            <div class="img-dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="info">
+            <h4>Albur</h4>
+            <div class="meta">
+              <span class="rating"><i data-lucide="star"></i>4.8</span>
+              <span class="reviews">(15)</span>
+              <span>·</span>
+              <span class="price">$$$ · De autor</span>
+            </div>
+            <div class="quedan"><i data-lucide="clock"></i>Quedan 6 lugares!</div>
+            <div class="slots">
+              <div class="slot"><div class="hr">20:30 hs</div><div class="ok">HAY LUGAR</div></div>
+              <div class="slot"><div class="hr">21:00 hs</div><div class="ok">HAY LUGAR</div></div>
+              <div class="slot"><div class="hr">21:30 hs</div><div class="ok">HAY LUGAR</div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. ANASAGASTI -->
+        <article class="wk-card">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=450&fit=crop&auto=format&q=80" alt="Anasagasti" loading="lazy">
+            <div class="cln-sticker">
+              <svg class="ln-mini" viewBox="730 360 510 290" style="color:#fff"><use href="#ln-logo-paths"/></svg>
+              <span class="pct">20%</span>
+            </div>
+            <button class="heart" aria-label="Guardar"><i data-lucide="heart"></i></button>
+            <div class="img-dots"><i class="on"></i><i></i><i></i></div>
+          </div>
+          <div class="info">
+            <h4>Anasagasti</h4>
+            <div class="meta">
+              <span class="rating"><i data-lucide="star"></i>4.9</span>
+              <span class="reviews">(9)</span>
+              <span>·</span>
+              <span class="price">$$ · Mediterránea</span>
+            </div>
+            <div class="quedan"><i data-lucide="clock"></i>Quedan 11 lugares!</div>
+            <div class="slots">
+              <div class="slot"><div class="hr">19:30 hs</div><div class="ok">HAY LUGAR</div></div>
+              <div class="slot"><div class="hr">20:00 hs</div><div class="ok">HAY LUGAR</div></div>
+              <div class="slot"><div class="hr">20:30 hs</div><div class="ok">HAY LUGAR</div></div>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </div>
