@@ -1,0 +1,1271 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Club LA NACION × Woki — Propuesta de alianza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wght@300;400;500;600;700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest" defer></script>
+<style>
+:root{
+  --woki-blue:#132F60;
+  --woki-deep:#202B3F;
+  --woki-celeste:#0066CC;
+  --woki-celeste-soft:#E7F1FF;
+  --woki-gradient:linear-gradient(60deg,#202B3F 0%,#0066CC 100%);
+  --off-white:#FAF7F4;
+  --paper:#FFFFFF;
+  --ink:#0E0F12;
+  --ink-soft:#2A2C32;
+  --ink-deep:#0E2A55;
+  --gray-meta:#6B6F76;
+  --gray-line:#E8E3DD;
+  --gray-tint:#F4F2EE;
+  --ln-ink:#0E0F12;
+  --ln-navy:#222226;
+  --ln-yellow:#F5E94A;
+  --ln-blue:#0066CC;
+  --ln-blue-soft:#F0F6FF;
+  --tint-woki:#F4F7FC;
+  --green-soft:#E8F5EC;
+  --green-deep:#0F7B3A;
+  --blue-soft:#E7F1FF;
+  --section-pad-y:clamp(80px,12vh,140px);
+  --gutter:clamp(20px,5vw,80px);
+  --max-w:1240px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--off-white);color:var(--ink);
+  font-family:'Figtree',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-size:16px;line-height:1.5;
+}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+
+/* ===== Typography ===== */
+.display{font-family:'Mona Sans',sans-serif;font-weight:500;letter-spacing:-0.025em;line-height:1.05;color:var(--ink)}
+.h-hero{font-family:'Mona Sans';font-weight:500;font-size:clamp(2.4rem,7vw,5.6rem);letter-spacing:-0.035em;line-height:1.02}
+.h-section{font-family:'Mona Sans';font-weight:500;font-size:clamp(1.8rem,4.2vw,3.4rem);letter-spacing:-0.025em;line-height:1.1}
+.h-sub{font-family:'Mona Sans';font-weight:400;font-size:clamp(1.05rem,1.8vw,1.5rem);letter-spacing:-0.01em;line-height:1.35;color:var(--ink-soft)}
+.eyebrow{font-family:'Figtree';font-size:clamp(.72rem,.95vw,.85rem);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--woki-blue)}
+.eyebrow.muted{color:var(--gray-meta)}
+.body{font-family:'Figtree';font-size:clamp(.95rem,1.15vw,1.06rem);line-height:1.55;color:var(--ink-soft)}
+.body-lg{font-family:'Figtree';font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.5;color:var(--ink-soft)}
+.meta{font-family:'Figtree';font-size:.85rem;color:var(--gray-meta);line-height:1.4}
+
+/* ===== Topnav ===== */
+.topnav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,247,244,.85);
+  backdrop-filter:saturate(180%) blur(14px);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid rgba(232,227,221,.6);
+}
+.topnav .inner{
+  max-width:var(--max-w);margin:0 auto;
+  padding:14px var(--gutter);
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.topnav .lockup{display:flex;align-items:center;gap:12px}
+.topnav .lockup .ln-svg{height:22px;width:auto}
+.topnav .lockup .woki-svg{height:18px;width:auto}
+.topnav .lockup .x{font-family:'Mona Sans';font-weight:300;color:var(--ink);opacity:.4;font-size:18px;line-height:1}
+.topnav nav{display:flex;gap:6px;align-items:center}
+.topnav nav a{
+  font-family:'Figtree';font-weight:500;font-size:13px;
+  color:var(--ink-soft);text-decoration:none;
+  padding:8px 12px;border-radius:8px;transition:all .15s;
+  white-space:nowrap;
+}
+.topnav nav a:hover{background:rgba(19,47,96,.06);color:var(--woki-blue)}
+.topnav .conf{font-family:'Figtree';font-size:11px;color:var(--gray-meta);letter-spacing:.12em;text-transform:uppercase}
+@media (max-width:900px){
+  .topnav nav{display:none}
+}
+
+/* ===== Section base ===== */
+section{
+  padding:var(--section-pad-y) var(--gutter);
+  position:relative;
+}
+section > .wrap{max-width:var(--max-w);margin:0 auto}
+
+/* ===== Section: Hero ===== */
+.hero{
+  min-height:calc(100vh - 60px);
+  display:flex;align-items:center;
+  position:relative;overflow:hidden;
+}
+.hero .wrap{width:100%}
+.hero .eyebrow-top{margin-bottom:clamp(28px,5vh,56px);color:var(--gray-meta)}
+.hero .lockup-big{
+  display:flex;align-items:center;gap:clamp(20px,4vw,52px);flex-wrap:wrap;
+  margin-bottom:clamp(28px,5vh,52px);
+}
+.hero .lockup-big .ln-svg{height:clamp(48px,8vw,110px);width:auto}
+.hero .lockup-big .woki-svg{height:clamp(42px,7.2vw,98px);width:auto}
+.hero .lockup-big .x{
+  font-family:'Mona Sans';font-weight:300;
+  font-size:clamp(2.5rem,6vw,5rem);color:var(--ink);opacity:.45;line-height:1;
+}
+.hero .sub{
+  font-family:'Mona Sans';font-weight:400;
+  font-size:clamp(1.2rem,2.3vw,1.85rem);
+  letter-spacing:-0.01em;color:var(--ink-soft);
+  max-width:42ch;line-height:1.3;
+}
+.hero .lines-deco{
+  position:absolute;right:-5%;top:-10%;
+  width:55vw;max-width:780px;height:55vw;max-height:780px;
+  opacity:.08;pointer-events:none;
+}
+.hero .lines-deco svg{width:100%;height:100%}
+.hero .foot{
+  position:absolute;left:var(--gutter);right:var(--gutter);bottom:32px;
+  display:flex;justify-content:space-between;align-items:baseline;
+  font-family:'Figtree';font-size:12px;color:var(--gray-meta);letter-spacing:.08em;text-transform:uppercase;
+}
+
+/* ===== Section: Contexto ===== */
+.contexto .head{max-width:780px;margin-bottom:clamp(40px,7vh,72px)}
+.contexto .kpis{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(24px,4vw,56px);
+  align-items:start;
+}
+.kpi .num{
+  font-family:'Figtree';font-weight:800;
+  font-size:clamp(2.8rem,7vw,5.5rem);
+  line-height:1;color:var(--ink);letter-spacing:-0.04em;
+}
+.kpi .num small{
+  font-size:0.5em;font-weight:700;color:var(--woki-celeste);
+  vertical-align:0.6em;margin-right:0.04em;
+}
+.kpi .num.word{
+  font-family:'Mona Sans';font-weight:500;letter-spacing:-0.025em;
+  font-size:clamp(2rem,4.6vw,3.6rem);
+}
+.kpi .lbl{
+  font-family:'Figtree';font-size:clamp(.95rem,1.2vw,1.1rem);
+  color:var(--ink-soft);margin-top:18px;line-height:1.45;max-width:22ch;
+}
+.contexto .hook{
+  margin-top:clamp(40px,6vh,64px);
+  font-family:'Mona Sans';font-weight:500;
+  font-size:clamp(1.15rem,1.9vw,1.55rem);
+  color:var(--woki-blue);letter-spacing:-0.015em;
+}
+.contexto .hook span{display:inline-block;border-bottom:2px solid var(--woki-celeste);padding-bottom:4px}
+@media (max-width:760px){
+  .contexto .kpis{grid-template-columns:1fr;gap:36px}
+}
+
+/* ===== Section: Problema ===== */
+.problema{background:linear-gradient(180deg,var(--off-white) 0%,#F4F0EA 100%)}
+.problema .head{max-width:780px;margin-bottom:clamp(40px,7vh,72px)}
+.problema .cards{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(20px,2.5vw,32px);
+}
+.problema .card{
+  background:var(--paper);border:1px solid var(--gray-line);
+  border-radius:16px;padding:clamp(24px,2.5vw,36px);
+  box-shadow:0 1px 0 rgba(20,30,60,.03), 0 12px 32px -20px rgba(20,30,60,.08);
+}
+.problema .card .ic{
+  width:48px;height:48px;border-radius:12px;
+  background:var(--tint-woki);color:var(--woki-blue);
+  display:grid;place-items:center;margin-bottom:24px;
+}
+.problema .card .ic svg{width:24px;height:24px;stroke-width:1.5}
+.problema .card h4{
+  font-family:'Mona Sans';font-weight:500;
+  font-size:clamp(1.25rem,1.7vw,1.55rem);
+  color:var(--ink);margin-bottom:12px;letter-spacing:-0.015em;line-height:1.2;
+}
+.problema .card p{
+  font-family:'Figtree';font-size:clamp(.92rem,1vw,1rem);
+  color:var(--ink-soft);line-height:1.55;
+}
+@media (max-width:900px){
+  .problema .cards{grid-template-columns:1fr}
+}
+
+/* ===== Section: Mockup La Cabrera ===== */
+.mock-cliente .head{max-width:820px;margin-bottom:clamp(40px,6vh,64px)}
+.mock-cliente .head .row{display:flex;align-items:baseline;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.mock-cliente .head .sub-right{max-width:32ch;color:var(--gray-meta);font-family:'Figtree';font-size:clamp(.95rem,1.1vw,1.05rem);line-height:1.5}
+.mock-cliente .mock-frame{
+  max-width:980px;margin:0 auto;
+  background:var(--paper);border-radius:20px;overflow:hidden;
+  border:1px solid var(--gray-line);
+  box-shadow:0 30px 80px -40px rgba(20,30,60,.35), 0 4px 12px -4px rgba(20,30,60,.06);
+}
+
+/* Browser chrome */
+.b-chrome{
+  display:flex;align-items:center;gap:8px;padding:11px 16px;
+  background:#EEEAE4;border-bottom:1px solid var(--gray-line);
+}
+.b-chrome .dot{width:11px;height:11px;border-radius:50%;background:#D6D0C9}
+.b-chrome .url{
+  flex:1;margin-left:12px;padding:6px 14px;
+  background:var(--paper);border:1px solid var(--gray-line);border-radius:7px;
+  font-family:'Figtree';font-size:12px;color:var(--gray-meta);
+}
+.b-chrome .url b{color:var(--ink);font-weight:600}
+
+/* LN Topbar */
+.ln-top{
+  background:#202024;color:#dcdce0;
+  padding:10px 18px;display:flex;gap:18px;align-items:center;
+  font-family:'Figtree';font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  overflow-x:auto;scrollbar-width:none;
+}
+.ln-top::-webkit-scrollbar{display:none}
+.ln-top .item{display:flex;align-items:center;gap:6px;white-space:nowrap;opacity:.9}
+.ln-top .item .badge{background:var(--ln-red,#E10A1B);color:#fff;padding:1px 5px;border-radius:3px;font-size:9px;font-weight:800;letter-spacing:.04em}
+.ln-top .item.ln-mk{font-weight:800;letter-spacing:.04em}
+.ln-top .item.ln-mk b{font-family:'Figtree';font-weight:800;font-size:13px;letter-spacing:.02em;color:#fff;line-height:1}
+.ln-top .item.ln-mk b::before{content:'LN';display:inline-block;background:#fff;color:#0E0F12;padding:2px 4px;border-radius:2px;margin-right:6px;font-weight:900}
+
+/* Club LN header */
+.ln-clubhead{
+  display:flex;align-items:center;gap:14px;padding:14px 22px;
+  border-bottom:1px solid var(--gray-line);background:#fff;
+}
+.ln-clubhead .burger{display:grid;gap:3px;padding:6px}
+.ln-clubhead .burger i{display:block;width:18px;height:1.8px;background:var(--ink)}
+.ln-clubhead .logo-ln{display:flex;align-items:center;gap:0}
+.ln-clubhead .logo-ln svg{height:38px;width:auto}
+.ln-clubhead .search{
+  flex:1;background:#fff;border:1px solid #E2DDD7;border-radius:999px;
+  padding:9px 16px;color:var(--gray-meta);font-size:12px;
+  display:flex;align-items:center;gap:10px;
+}
+.ln-clubhead .search svg{width:14px;height:14px;stroke-width:2}
+.ln-clubhead .cerca{
+  display:flex;align-items:center;gap:6px;
+  font-family:'Figtree';font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--ink);text-transform:uppercase;
+}
+.ln-clubhead .cerca svg{width:14px;height:14px;color:var(--woki-celeste);stroke-width:2}
+.ln-clubhead .suscribite{
+  background:var(--ln-yellow);color:var(--ink);
+  font-family:'Figtree';font-weight:800;font-size:11px;letter-spacing:.08em;
+  padding:10px 16px;border-radius:999px;text-transform:uppercase;
+  position:relative;
+}
+.ln-clubhead .suscribite::before{
+  content:'¡Últimas suscripciones! 🔥';
+  position:absolute;top:-26px;right:-4px;
+  background:#fff;color:var(--ink);
+  font-family:'Figtree';font-size:9px;font-weight:600;letter-spacing:0;
+  padding:3px 8px;border-radius:6px;text-transform:none;
+  box-shadow:0 4px 12px -4px rgba(0,0,0,.15);
+  white-space:nowrap;
+}
+.ln-clubhead .suscribite::after{
+  content:'';position:absolute;top:-4px;right:30px;
+  border:5px solid transparent;border-top-color:#fff;
+}
+.ln-clubhead .login{
+  font-family:'Figtree';font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--ink);text-transform:uppercase;
+}
+.ln-clubhead .bell{width:18px;height:18px;color:var(--ink);stroke-width:1.5}
+
+/* Club LN secondary menu */
+.ln-menu{
+  display:flex;gap:24px;align-items:center;
+  padding:12px 22px;border-bottom:1px solid var(--gray-line);background:#fff;
+  font-family:'Figtree';font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--ink);text-transform:uppercase;
+  overflow-x:auto;scrollbar-width:none;
+}
+.ln-menu::-webkit-scrollbar{display:none}
+.ln-menu .it{white-space:nowrap;display:flex;align-items:center;gap:4px}
+.ln-menu .it svg{width:10px;height:10px}
+.ln-menu .news{margin-left:auto;color:var(--ink);font-weight:600;display:flex;align-items:center;gap:6px}
+
+/* Body of La Cabrera page */
+.lc-body{
+  display:grid;grid-template-columns:1fr 1.05fr;gap:0;
+  background:#0E0E10;color:#fff;
+}
+.lc-left{padding:24px 28px;background:#0E0E10;color:#fff;position:relative}
+.lc-breadcrumb{
+  font-family:'Figtree';font-size:11.5px;color:#9aa0aa;font-weight:600;
+  margin-bottom:18px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;
+}
+.lc-breadcrumb a{color:#9aa0aa;text-decoration:none}
+.lc-breadcrumb .sep{color:#5b6068;font-size:10px}
+.lc-breadcrumb .current{color:var(--woki-celeste);font-weight:700}
+.lc-share{position:absolute;top:24px;right:28px;width:28px;height:28px;border-radius:50%;background:#1a1a1d;display:grid;place-items:center}
+.lc-share svg{width:13px;height:13px;color:#fff;stroke-width:2}
+
+.lc-hero{
+  position:relative;border-radius:12px;overflow:hidden;
+  height:300px;
+  background:
+    radial-gradient(ellipse at 35% 55%, rgba(255,180,90,.55), transparent 50%),
+    radial-gradient(ellipse at 70% 50%, rgba(220,120,40,.45), transparent 55%),
+    radial-gradient(circle at 45% 50%, rgba(120,80,40,.6), transparent 35%),
+    linear-gradient(160deg, #1a1208 0%, #2a1a0a 50%, #3a2410 100%);
+}
+.lc-hero::before{
+  content:'LA CABRERA';
+  position:absolute;left:50%;top:18px;transform:translateX(-50%);
+  font-family:'Mona Sans';font-weight:700;font-size:18px;
+  color:rgba(255,235,200,.85);letter-spacing:.04em;
+  white-space:nowrap;
+}
+.lc-hero::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg, transparent 60%, rgba(0,0,0,.5) 100%);
+}
+.lc-hero-arrow{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.15);
+  display:grid;place-items:center;color:#fff;backdrop-filter:blur(4px);
+}
+.lc-hero-arrow.l{left:12px}
+.lc-hero-arrow.r{right:12px}
+.lc-hero-arrow svg{width:14px;height:14px;stroke-width:2}
+.lc-hero-dots{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:3}
+.lc-hero-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.35)}
+.lc-hero-dots i.on{background:#fff;width:9px;height:9px}
+
+.lc-meta{display:flex;align-items:center;gap:14px;margin-top:18px}
+.lc-socials{display:flex;gap:10px}
+.lc-socials .so{width:36px;height:36px;border-radius:50%;background:#1a1a1d;display:grid;place-items:center;border:1px solid #2a2a2e}
+.lc-socials .so svg{width:15px;height:15px;color:#fff;stroke-width:2}
+.lc-sitio{
+  margin-left:auto;background:#fff;color:var(--ink);
+  font-family:'Mona Sans';font-weight:600;font-size:11.5px;letter-spacing:.1em;
+  padding:11px 22px;border-radius:999px;text-transform:uppercase;
+}
+
+.lc-name{
+  font-family:'Mona Sans';font-weight:700;font-size:42px;color:#fff;
+  margin-top:24px;letter-spacing:-0.01em;line-height:1;
+}
+.lc-desc{
+  font-family:'Figtree';font-size:14px;color:#c5c8cf;
+  margin-top:14px;line-height:1.55;max-width:42ch;
+}
+
+/* Right column — Beneficios */
+.lc-right{padding:28px;background:#0E0E10;color:#fff;border-left:1px solid #1c1c1f}
+.lc-right h3{
+  font-family:'Mona Sans';font-weight:600;font-size:22px;color:#fff;
+  margin-bottom:6px;letter-spacing:-0.01em;
+}
+.lc-right .sub{
+  font-family:'Figtree';font-size:12.5px;color:#9aa0aa;margin-bottom:18px;
+}
+.lc-right .sub b{color:#fff;font-weight:600}
+
+/* Discount card */
+.lc-discount{
+  background:#161618;border:1px solid #232327;border-radius:14px;
+  padding:20px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;
+}
+.lc-discount .pct{
+  font-family:'Figtree';font-weight:800;font-size:54px;color:#fff;line-height:1;letter-spacing:-0.04em;
+  display:flex;align-items:flex-start;gap:2px;
+}
+.lc-discount .pct sup{font-size:.4em;font-weight:700;margin-top:6px;color:#fff}
+.lc-discount .pct .off{display:block;font-size:.22em;font-weight:700;color:#9aa0aa;letter-spacing:.14em;margin-top:6px}
+.lc-discount .copy .t{font-family:'Figtree';font-weight:700;font-size:14.5px;color:#fff;line-height:1.3}
+.lc-discount .copy .chip{
+  display:inline-block;margin-top:8px;
+  background:rgba(0,102,204,.18);color:#5BA4F0;
+  font-family:'Figtree';font-weight:700;font-size:10px;letter-spacing:.12em;
+  padding:5px 9px;border-radius:5px;text-transform:uppercase;
+}
+.lc-discount-fine{
+  font-family:'Figtree';font-size:12px;color:#9aa0aa;line-height:1.55;
+  margin-top:16px;
+}
+
+/* RESERVAR button — the star */
+.lc-reservar{
+  margin-top:20px;width:100%;
+  background:var(--woki-celeste);color:#fff;
+  font-family:'Mona Sans';font-weight:600;font-size:15px;letter-spacing:-0.005em;
+  padding:18px 24px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  box-shadow:0 14px 32px -14px rgba(0,102,204,.65), 0 0 0 1px rgba(0,102,204,.2);
+  transition:transform .15s, box-shadow .15s, background .15s;
+}
+.lc-reservar:hover{background:#0057B0;transform:translateY(-1px);box-shadow:0 18px 36px -14px rgba(0,102,204,.7)}
+.lc-reservar svg{width:18px;height:18px;stroke-width:2}
+.lc-reservar-fine{
+  font-family:'Figtree';font-size:11.5px;color:#9aa0aa;
+  text-align:center;margin-top:10px;letter-spacing:0;
+}
+
+/* Conditions */
+.lc-cond{margin-top:24px;padding-top:24px;border-top:1px solid #1c1c1f}
+.lc-cond h5{
+  font-family:'Mona Sans';font-weight:600;font-size:14px;color:#fff;margin-bottom:14px;letter-spacing:-0.01em;
+}
+.lc-cond .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+.lc-cond .row{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lc-cond .row .ic{
+  width:30px;height:30px;border-radius:50%;background:#1a1a1d;
+  display:grid;place-items:center;color:#9aa0aa;flex-shrink:0;
+}
+.lc-cond .row .ic svg{width:14px;height:14px;stroke-width:1.8}
+.lc-cond .row .k{font-family:'Figtree';font-size:9.5px;font-weight:700;letter-spacing:.14em;color:#7d828b;text-transform:uppercase;margin-bottom:3px}
+.lc-cond .row .v{font-family:'Figtree';font-size:12.5px;color:#fff;font-weight:500;line-height:1.35}
+.lc-cond .row .v.link{color:#5BA4F0}
+.lc-cond .chips{display:flex;gap:4px;margin-top:1px}
+.lc-cond .chips span{
+  font-family:'Figtree';font-weight:800;font-size:9px;letter-spacing:.08em;
+  padding:3px 6px;border-radius:3px;line-height:1;
+}
+.lc-cond .chips .black{background:#0E0F12;color:#fff;border:1px solid #2a2a2e}
+.lc-cond .chips .premium{background:var(--woki-celeste);color:#fff}
+.lc-cond .chips .classic{background:#5BA4F0;color:var(--ink)}
+
+@media (max-width:760px){
+  .lc-body{grid-template-columns:1fr}
+  .lc-right{border-left:none;border-top:1px solid #1c1c1f}
+  .lc-name{font-size:30px}
+  .lc-hero{height:200px}
+  .ln-clubhead .search{display:none}
+  .ln-clubhead .cerca{display:none}
+  .ln-clubhead .suscribite::before{display:none}
+  .ln-clubhead .suscribite::after{display:none}
+  .ln-clubhead{padding:12px 16px;gap:10px}
+  .lc-cond .grid{grid-template-columns:1fr}
+}
+
+/* ===== Section: Mockup Panel ===== */
+.mock-admin{background:linear-gradient(180deg,var(--off-white) 0%,#F4F0EA 100%)}
+.mock-admin .head{max-width:820px;margin-bottom:clamp(40px,6vh,64px)}
+.mock-admin .frame-wrap{
+  display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(28px,4vw,60px);
+  align-items:start;max-width:1100px;margin:0 auto;
+}
+@media (max-width:960px){
+  .mock-admin .frame-wrap{grid-template-columns:1fr}
+}
+.resv-card{
+  background:var(--paper);border:1px solid var(--gray-line);border-radius:18px;
+  box-shadow:0 30px 70px -40px rgba(20,30,60,.3), 0 4px 12px -4px rgba(20,30,60,.05);
+  font-family:'Figtree';overflow:hidden;
+}
+.resv-bar{
+  background:var(--ink);color:#fff;
+  padding:10px 20px;font-family:'Figtree';font-size:11px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+  display:flex;align-items:center;gap:10px;
+}
+.resv-bar .dot{width:6px;height:6px;border-radius:50%;background:var(--woki-celeste)}
+.resv-bar .url{margin-left:auto;color:#9aa0aa;font-weight:500;text-transform:none;letter-spacing:0}
+.resv-head{display:flex;align-items:center;padding:22px 24px;border-bottom:1px solid var(--gray-line);gap:16px}
+.avatar{
+  width:48px;height:48px;border-radius:50%;
+  background:linear-gradient(135deg,#E0DDD7,#C8C3BB);
+  color:var(--ink);display:grid;place-items:center;
+  font-family:'Figtree';font-weight:700;font-size:16px;letter-spacing:.02em;
+}
+.resv-head .who .name{font-family:'Mona Sans';font-weight:500;font-size:20px;color:var(--ink);letter-spacing:-0.01em;line-height:1.1}
+.resv-head .who .m{font-family:'Figtree';font-size:13px;color:var(--gray-meta);margin-top:4px}
+.resv-head .status{
+  margin-left:auto;background:var(--green-soft);color:var(--green-deep);
+  font-weight:600;font-size:12px;padding:6px 12px;border-radius:999px;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.resv-head .status::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green-deep)}
+
+.resv-detail{display:grid;grid-template-columns:repeat(3,1fr);padding:20px 24px;border-bottom:1px solid var(--gray-line);gap:18px}
+.det{display:flex;align-items:center;gap:12px}
+.det .ic{width:36px;height:36px;border-radius:10px;background:var(--gray-tint);color:var(--ink);display:grid;place-items:center}
+.det .ic svg{width:16px;height:16px;stroke-width:1.8}
+.det .k{font-family:'Figtree';font-size:10px;font-weight:700;text-transform:uppercase;color:var(--gray-meta);letter-spacing:.1em}
+.det .v{font-family:'Figtree';font-weight:700;font-size:17px;color:var(--ink);line-height:1.1;margin-top:3px}
+.det .v.sm{font-size:13px;font-weight:500;line-height:1.3}
+
+/* LN Badge — sin rojo, azul/negro */
+.ln-badge{
+  margin:20px 24px;
+  background:var(--ln-blue-soft);
+  border-left:3px solid var(--ln-blue);
+  border-radius:10px;padding:14px 16px;
+}
+.ln-badge .top{display:flex;align-items:center;gap:10px;color:var(--ink-deep);font-weight:600;font-size:14px}
+.ln-badge .top .ln-mini{height:18px;width:auto}
+.ln-badge .top .sep{color:var(--gray-meta);font-weight:400}
+.ln-badge .top .tier{
+  background:var(--ink);color:#fff;font-weight:800;font-size:10px;letter-spacing:.1em;
+  padding:3px 7px;border-radius:4px;
+}
+.ln-badge .sub{font-family:'Figtree';font-size:13px;color:var(--ink-soft);margin-top:8px;line-height:1.45}
+.ln-badge .sub b{color:var(--ln-blue);font-weight:700}
+
+/* Context */
+.ctx{padding:10px 24px 22px}
+.ctx .lbl{font-family:'Figtree';font-size:10px;font-weight:700;letter-spacing:.16em;color:var(--gray-meta);text-transform:uppercase;margin-bottom:12px}
+.ctx .tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;font-family:'Figtree';font-size:12.5px;font-weight:500;line-height:1}
+.tag svg{width:14px;height:14px;stroke-width:1.8}
+.tag.celeste{background:var(--woki-celeste-soft);color:var(--woki-celeste)}
+.tag.navy{background:#EAEEF5;color:var(--ink-deep)}
+.tag.gray{background:var(--gray-tint);color:var(--gray-meta)}
+
+.resv-foot{display:flex;gap:10px;padding:0 24px 24px}
+.btn-p{
+  flex:1;background:var(--woki-blue);color:#fff;
+  font-family:'Mona Sans';font-weight:500;font-size:13.5px;
+  padding:13px 16px;border-radius:10px;letter-spacing:-0.005em;
+}
+.btn-s{
+  flex:1;background:var(--paper);color:var(--woki-blue);border:1.5px solid var(--woki-blue);
+  font-family:'Mona Sans';font-weight:500;font-size:13.5px;
+  padding:13px 16px;border-radius:10px;letter-spacing:-0.005em;
+}
+
+@media (max-width:540px){
+  .resv-detail{grid-template-columns:1fr;gap:14px}
+  .resv-foot{flex-direction:column}
+}
+
+.annot-stack{display:flex;flex-direction:column;gap:14px}
+.annot{
+  background:#fff;border:1px solid var(--gray-line);
+  border-left:3px solid var(--woki-celeste);
+  padding:14px 18px;border-radius:10px;
+}
+.annot .k{font-family:'Figtree';font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--woki-celeste);margin-bottom:4px}
+.annot p{font-family:'Figtree';font-size:14px;color:var(--ink-soft);line-height:1.5}
+
+/* ===== Section: Ganadores ===== */
+.ganadores .head{max-width:780px;margin-bottom:clamp(40px,6vh,64px)}
+.ganadores .grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:clamp(20px,2.4vw,32px);
+}
+.ganadores .card{
+  background:var(--paper);border:1px solid var(--gray-line);border-radius:16px;
+  padding:clamp(24px,2.4vw,32px);display:flex;flex-direction:column;gap:14px;
+}
+.ganadores .card.woki{position:relative;overflow:hidden}
+.ganadores .card.woki::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--woki-gradient);
+}
+.ganadores .card .top{display:flex;align-items:center;gap:14px}
+.ganadores .card .ic{
+  width:42px;height:42px;border-radius:10px;
+  background:var(--tint-woki);color:var(--woki-blue);
+  display:grid;place-items:center;
+}
+.ganadores .card .ic svg{width:20px;height:20px;stroke-width:1.7}
+.ganadores .card h4{font-family:'Mona Sans';font-weight:500;font-size:clamp(1.15rem,1.5vw,1.4rem);color:var(--ink);letter-spacing:-0.015em}
+.ganadores .card ul{display:flex;flex-direction:column;gap:8px}
+.ganadores .card li{
+  font-family:'Figtree';font-size:clamp(.92rem,1.05vw,1.02rem);
+  color:var(--ink-soft);line-height:1.5;padding-left:18px;position:relative;
+}
+.ganadores .card li::before{
+  content:'';position:absolute;left:0;top:9px;
+  width:6px;height:6px;border-radius:50%;background:var(--woki-celeste);
+}
+@media (max-width:760px){
+  .ganadores .grid{grid-template-columns:1fr}
+}
+
+/* ===== Section: Upside ===== */
+.upside .head{max-width:880px;margin-bottom:clamp(40px,6vh,64px)}
+.upside .split{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:clamp(28px,3.5vw,56px);
+}
+@media (max-width:900px){
+  .upside .split{grid-template-columns:1fr}
+}
+.upside .blk h4{
+  font-family:'Mona Sans';font-weight:500;
+  font-size:clamp(1.3rem,2vw,1.7rem);color:var(--ink);
+  letter-spacing:-0.015em;margin-bottom:12px;
+}
+.upside .blk p{font-family:'Figtree';font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--ink-soft);line-height:1.55;margin-bottom:20px}
+
+.yield-card{background:var(--paper);border:1px solid var(--gray-line);border-radius:14px;padding:18px 20px}
+.yield-card .head-row{display:grid;grid-template-columns:42px repeat(7,1fr);gap:6px;font-family:'Figtree';font-size:10px;color:var(--gray-meta);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--gray-line)}
+.yield-card .head-row > div:not(:first-child){text-align:center;font-weight:700}
+.yield-card .row{display:grid;grid-template-columns:42px repeat(7,1fr);gap:6px;align-items:center;margin-top:6px}
+.yield-card .row .h{font-family:'Figtree';font-size:11px;color:var(--gray-meta);font-weight:700}
+.yield-card .cell{height:26px;border-radius:5px;background:#E5EBF0;position:relative}
+.yield-card .cell.lo{background:var(--woki-celeste-soft);border:1px dashed var(--woki-celeste)}
+.yield-card .cell.lo::after{content:'LN';position:absolute;inset:0;display:grid;place-items:center;font-family:'Figtree';font-weight:800;font-size:9.5px;color:var(--woki-celeste);letter-spacing:.08em}
+.yield-card .cell.mid{background:#CFE0F5}
+.yield-card .cell.hi{background:#22A35F}
+.yield-card .cell.full{background:#0F7B3A}
+.yield-card .legend{display:flex;gap:14px;margin-top:14px;font-family:'Figtree';font-size:11px;color:var(--gray-meta);align-items:center;flex-wrap:wrap}
+.yield-card .legend i{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:5px;vertical-align:-1px}
+
+.dash{background:var(--paper);border:1px solid var(--gray-line);border-radius:14px;padding:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.dash .kpi{}
+.dash .v{font-family:'Figtree';font-weight:800;font-size:clamp(1.4rem,2.2vw,1.85rem);color:var(--ink);letter-spacing:-0.025em;line-height:1}
+.dash .v .pos{color:var(--green-deep);font-size:.6em;margin-right:0.04em}
+.dash .k{font-family:'Figtree';font-size:11.5px;color:var(--gray-meta);margin-top:8px;line-height:1.4}
+@media (max-width:540px){
+  .dash{grid-template-columns:1fr}
+}
+
+/* ===== Section: Plan ===== */
+.plan .head{max-width:780px;margin-bottom:clamp(40px,6vh,64px)}
+.plan .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px);position:relative;align-items:start}
+.plan .timeline::before{
+  content:'';position:absolute;top:30px;left:10%;right:10%;
+  height:2px;background:repeating-linear-gradient(90deg,var(--gray-line) 0 10px,transparent 10px 18px);
+}
+.plan .node{display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;z-index:2}
+.plan .node .circle{
+  width:60px;height:60px;border-radius:50%;background:var(--woki-blue);color:#fff;
+  display:grid;place-items:center;font-family:'Figtree';font-weight:700;font-size:24px;
+  box-shadow:0 0 0 8px var(--off-white);
+}
+.plan .node h4{font-family:'Mona Sans';font-weight:500;font-size:clamp(1.15rem,1.5vw,1.4rem);margin-top:24px;color:var(--ink);letter-spacing:-0.015em}
+.plan .node .when{font-family:'Figtree';font-size:11px;color:var(--woki-celeste);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-top:8px}
+.plan .node .card{background:var(--paper);border:1px solid var(--gray-line);border-radius:12px;padding:18px;margin-top:18px;text-align:left;width:100%}
+.plan .node .card ul{display:flex;flex-direction:column;gap:8px}
+.plan .node .card li{font-family:'Figtree';font-size:.9rem;color:var(--ink-soft);line-height:1.5;padding-left:14px;position:relative}
+.plan .node .card li::before{content:'·';position:absolute;left:2px;color:var(--woki-celeste);font-weight:900;font-size:1.2em;line-height:1}
+.plan .pie{margin-top:clamp(30px,5vh,50px);font-family:'Figtree';font-size:14px;color:var(--gray-meta);font-style:italic;text-align:center;max-width:60ch;margin-left:auto;margin-right:auto}
+@media (max-width:760px){
+  .plan .timeline{grid-template-columns:1fr;gap:40px}
+  .plan .timeline::before{display:none}
+}
+
+/* ===== Section: Modelo ===== */
+.modelo .head{max-width:780px;margin-bottom:clamp(40px,6vh,64px)}
+.modelo .opts{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.4vw,32px);align-items:stretch}
+.modelo .opt{
+  background:var(--paper);border:1px solid var(--gray-line);border-radius:16px;
+  padding:clamp(24px,2.4vw,32px);display:flex;flex-direction:column;gap:14px;position:relative;
+}
+.modelo .opt.reco{border:2px solid var(--woki-blue);box-shadow:0 30px 60px -32px rgba(19,47,96,.35)}
+.modelo .opt .reco-tag{
+  position:absolute;top:-12px;right:20px;
+  background:var(--woki-blue);color:#fff;font-family:'Figtree';font-weight:700;
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  padding:5px 12px;border-radius:999px;
+}
+.modelo .opt .letra{font-family:'Mona Sans';font-weight:500;font-size:13px;color:var(--woki-celeste);text-transform:uppercase;letter-spacing:.18em}
+.modelo .opt h4{font-family:'Mona Sans';font-weight:500;font-size:clamp(1.25rem,1.7vw,1.55rem);color:var(--ink);letter-spacing:-0.015em;line-height:1.15}
+.modelo .opt ul{display:flex;flex-direction:column;gap:8px;flex:1}
+.modelo .opt li{font-family:'Figtree';font-size:clamp(.92rem,1.05vw,1rem);color:var(--ink-soft);line-height:1.5;padding-left:14px;position:relative}
+.modelo .opt li::before{content:'';position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--woki-celeste)}
+.modelo .closer{margin-top:clamp(28px,4vh,40px);font-family:'Mona Sans';font-weight:400;font-size:clamp(1rem,1.4vw,1.2rem);color:var(--woki-blue);letter-spacing:-0.01em;max-width:60ch}
+@media (max-width:900px){
+  .modelo .opts{grid-template-columns:1fr}
+}
+
+/* ===== Section: Cierre ===== */
+.cierre{
+  background:var(--off-white);
+  min-height:80vh;display:flex;flex-direction:column;justify-content:center;
+  position:relative;
+}
+.cierre .quote{
+  font-family:'Mona Sans';font-weight:300;
+  font-size:clamp(2rem,5.6vw,4.6rem);
+  letter-spacing:-0.025em;line-height:1.05;color:var(--ink);
+  max-width:18ch;
+}
+.cierre .quote em{font-style:normal;font-weight:500;
+  background:var(--woki-gradient);-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.cierre .sub{
+  font-family:'Figtree';font-size:clamp(1.05rem,1.5vw,1.35rem);
+  color:var(--gray-meta);margin-top:clamp(24px,4vh,40px);
+  max-width:42ch;line-height:1.4;
+}
+.cierre .foot{
+  margin-top:clamp(48px,8vh,96px);
+  display:flex;align-items:center;gap:clamp(16px,3vw,36px);flex-wrap:wrap;
+  border-top:1px solid var(--gray-line);padding-top:clamp(24px,4vh,40px);
+}
+.cierre .foot .ln-svg{height:clamp(34px,4vw,52px);width:auto}
+.cierre .foot .woki-svg{height:clamp(28px,3.4vw,44px);width:auto}
+.cierre .foot .x{font-family:'Mona Sans';font-weight:300;font-size:clamp(1.4rem,2.4vw,2rem);color:var(--ink);opacity:.4}
+
+/* ===== Footer ===== */
+footer{
+  padding:36px var(--gutter);background:#0E0E10;color:#9aa0aa;
+  font-family:'Figtree';font-size:12px;
+}
+footer .inner{max-width:var(--max-w);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer a{color:#dcdce0;text-decoration:none;font-weight:500}
+
+/* ===== Helpers ===== */
+.ln-svg-blackfill svg path,
+svg.ln-svg path{fill:currentColor}
+
+/* hide scrollbars on the topnav scroll-x within mockup but keep functional */
+</style>
+</head>
+<body>
+
+<header class="topnav">
+  <div class="inner">
+    <a href="#hero" class="lockup" aria-label="Inicio">
+      <!-- LN logo -->
+      <svg class="ln-svg" viewBox="0 0 1921 1080" xmlns="http://www.w3.org/2000/svg" style="color:var(--ink)">
+        <use href="#ln-logo-paths"/>
+      </svg>
+      <span class="x">×</span>
+      <!-- Woki logo -->
+      <svg class="woki-svg" viewBox="0 0 202.48 54.72" xmlns="http://www.w3.org/2000/svg">
+        <use href="#woki-logo-paths"/>
+      </svg>
+    </a>
+    <nav>
+      <a href="#contexto">Contexto</a>
+      <a href="#problema">Problema</a>
+      <a href="#mock-cliente">Experiencia del socio</a>
+      <a href="#mock-admin">Experiencia del resto</a>
+      <a href="#ganadores">Valor</a>
+      <a href="#plan">Plan</a>
+      <a href="#modelo">Modelo</a>
+    </nav>
+    <span class="conf">Confidencial · 2026</span>
+  </div>
+</header>
+
+<!-- Inline SVG defs (logos) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- LN logo paths -->
+    <g id="ln-logo-paths">
+      <g transform="translate(0,1080) scale(0.1,-0.1)" fill="currentColor" stroke="none">
+        <path d="M8630 7023 c-300 -32 -612 -138 -867 -294 -175 -108 -404 -308 -527 -462 -409 -514 -552 -1181 -390 -1820 50 -197 149 -423 260 -594 50 -78 56 -83 88 -83 78 0 86 58 22 158 -230 354 -341 822 -295 1240 70 650 463 1222 1042 1518 955 489 2125 107 2604 -851 67 -133 77 -145 119 -145 34 0 64 28 64 61 0 9 -26 70 -59 135 -308 625 -908 1047 -1611 1134 -79 9 -371 12 -450 3z"/>
+        <path d="M8488 6023 l-58 -4 0 -39 0 -40 45 0 45 0 0 -369 c0 -398 2 -381 -51 -381 -15 0 -19 -7 -19 -35 l0 -35 135 0 135 0 0 35 c0 34 -1 35 -40 35 l-40 0 0 420 0 420 -47 -2 c-27 -1 -74 -3 -105 -5z"/>
+        <path d="M9578 6023 c-37 -4 -38 -5 -38 -44 l0 -39 45 0 45 0 0 -405 0 -404 38 -8 c20 -4 100 -8 177 -8 154 0 183 8 259 76 83 72 117 231 81 366 -48 177 -233 235 -427 135 -5 -2 -8 73 -8 167 l0 171 -67 -2 c-38 -1 -85 -3 -105 -5z m364 -373 c85 -24 132 -102 132 -219 0 -83 -17 -133 -61 -182 -49 -54 -119 -70 -225 -53 l-38 7 0 207 0 208 43 16 c76 27 98 30 149 16z"/>
+        <path d="M7924 5976 c-217 -50 -323 -212 -311 -476 9 -208 90 -327 257 -378 101 -30 424 -15 435 22 2 6 6 50 9 99 l5 87 -49 0 -49 0 -6 -55 c-4 -30 -14 -60 -23 -67 -10 -9 -51 -13 -127 -13 -104 0 -115 2 -171 30 -106 55 -151 166 -142 357 8 161 51 239 163 290 43 20 66 23 159 22 125 0 136 -7 136 -81 l0 -43 50 0 50 0 0 94 0 94 -52 12 c-87 18 -265 22 -334 6z"/>
+        <path d="M8818 5723 c-13 -3 -18 -15 -18 -39 0 -32 2 -34 35 -34 l35 0 0 -186 c0 -106 5 -205 11 -231 32 -127 182 -168 335 -93 34 16 64 30 68 30 3 0 6 -11 6 -24 0 -14 5 -28 10 -31 6 -4 46 -3 90 1 l80 7 0 38 c0 37 -1 38 -37 41 l-38 3 -3 263 -2 262 -79 0 c-102 0 -111 -4 -111 -46 0 -33 1 -34 40 -34 l40 0 -2 -207 -3 -208 -50 -25 c-60 -29 -140 -32 -180 -6 -49 32 -55 66 -55 306 l0 220 -77 -1 c-43 -1 -86 -3 -95 -6z"/>
+        <path d="M10475 4783 c-111 -40 -177 -119 -183 -219 -5 -75 17 -124 83 -182 139 -122 368 -87 392 61 5 32 3 37 -15 37 -15 0 -21 -9 -26 -33 -16 -85 -136 -134 -212 -88 -50 31 -67 89 -62 215 4 119 17 147 81 179 70 35 153 -5 180 -86 10 -30 20 -43 35 -45 21 -3 22 0 22 77 0 83 -11 107 -35 75 -13 -18 -14 -18 -50 -1 -57 27 -150 31 -210 10z"/>
+        <path d="M11409 4786 c-169 -65 -234 -226 -144 -356 78 -112 242 -153 370 -91 103 49 155 123 155 221 0 86 -54 162 -150 211 -56 28 -177 36 -231 15z m176 -46 c14 -13 30 -39 36 -58 16 -47 16 -208 0 -254 -35 -106 -168 -119 -217 -21 -15 30 -19 60 -19 148 0 123 16 174 64 201 36 20 106 12 136 -16z"/>
+        <path d="M11845 4790 c-9 -15 4 -30 25 -30 42 0 50 -34 50 -212 0 -181 -5 -198 -56 -198 -15 0 -24 -6 -24 -15 0 -12 17 -15 95 -15 78 0 95 3 95 15 0 10 -10 15 -29 15 -48 0 -52 14 -49 187 l3 160 165 -188 c150 -171 168 -188 198 -189 l32 0 0 201 c0 119 4 208 10 220 7 12 21 19 40 19 23 0 30 4 30 20 0 19 -7 20 -95 20 -88 0 -95 -1 -95 -20 0 -15 7 -20 29 -20 46 0 52 -17 49 -136 l-3 -107 -124 141 -123 142 -108 0 c-62 0 -111 -4 -115 -10z"/>
+        <path d="M7650 4770 c0 -16 7 -20 35 -20 l35 0 0 -122 c0 -68 3 -160 7 -205 l6 -83 -42 0 c-30 0 -41 -4 -41 -15 0 -13 32 -15 230 -15 l230 0 0 95 c0 77 -3 95 -15 95 -10 0 -17 -15 -22 -42 -11 -72 -78 -118 -170 -118 l-33 0 0 205 0 205 45 0 c38 0 45 3 45 20 0 19 -7 20 -155 20 -148 0 -155 -1 -155 -20z"/>
+        <path d="M8315 4573 c-102 -201 -112 -219 -142 -228 -18 -5 -33 -15 -33 -22 0 -10 24 -13 95 -13 78 0 95 3 95 15 0 10 -10 15 -29 15 -40 0 -46 15 -26 61 l18 39 102 0 101 0 22 -45 c12 -25 22 -48 22 -50 0 -3 -16 -5 -35 -5 -24 0 -35 -5 -35 -15 0 -13 24 -15 155 -15 131 0 155 2 155 15 0 10 -10 15 -32 15 -33 0 -34 3 -148 223 -157 300 -139 300 -285 10z m120 -13 c19 -38 35 -74 35 -80 0 -6 -30 -10 -75 -10 -41 0 -75 3 -75 8 0 14 65 152 72 152 4 0 24 -31 43 -70z"/>
+        <path d="M9080 4778 c0 -7 15 -20 33 -28 l32 -15 0 -190 0 -190 -32 -10 c-18 -5 -33 -15 -33 -22 0 -10 24 -13 95 -13 72 0 95 3 95 13 0 8 -17 18 -37 23 l-38 9 -3 168 -2 169 87 -99 c49 -55 124 -141 168 -191 70 -80 84 -92 113 -92 l32 0 0 209 c0 206 0 210 22 225 12 9 30 16 40 16 10 0 18 7 18 15 0 12 -18 15 -100 15 -82 0 -100 -3 -100 -15 0 -9 9 -15 23 -15 12 0 33 -7 45 -16 20 -14 22 -23 22 -120 0 -57 -3 -104 -8 -104 -4 0 -61 61 -126 135 l-119 135 -114 0 c-84 0 -113 -3 -113 -12z"/>
+        <path d="M9830 4577 c-93 -187 -109 -214 -137 -226 -61 -27 -41 -41 57 -41 73 0 90 3 90 15 0 8 -8 15 -18 15 -10 0 -26 6 -35 13 -15 11 -15 15 3 55 l19 42 98 0 99 0 27 -55 27 -55 -35 0 c-24 0 -35 -5 -35 -15 0 -13 23 -15 150 -15 142 0 150 1 150 19 0 15 -8 21 -32 23 -34 3 -22 -16 -215 351 -43 81 -48 87 -77 87 -30 -1 -33 -6 -136 -213z m123 -22 l36 -70 -76 -3 c-41 -2 -77 -1 -80 1 -2 3 13 39 34 81 20 42 40 72 44 68 4 -4 23 -38 42 -77z"/>
+        <path d="M10860 4775 c0 -10 11 -15 35 -15 l35 0 0 -205 0 -205 -35 0 c-29 0 -35 -4 -35 -21 0 -17 4 -20 23 -15 12 3 79 6 150 6 106 0 127 2 127 15 0 11 -11 15 -40 15 l-40 0 0 205 0 205 40 0 c29 0 40 4 40 15 0 13 -23 15 -150 15 -127 0 -150 -2 -150 -15z"/>
+      </g>
+    </g>
+    <!-- Woki logo paths -->
+    <g id="woki-logo-paths">
+      <defs>
+        <linearGradient id="b2b-grad" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#202B3F"/>
+          <stop offset="1" stop-color="#0066CC"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#b2b-grad)" d="M177.22,47.77c.2.44.31.92.31,1.43,0,1.92-1.54,3.47-3.46,3.49-.01,0-.02,0-.03,0h-9.36c-1.36,0-2.53-.77-3.11-1.9l-5.06-11.98-1.38-3.29c-.16-.42-.32-.86-.45-1.29-.88-2.7-1.32-5.51-1.33-8.31,0-2.94.5-5.89,1.46-8.7h0c.47-1.7,2.6-6.09,4.43-9.72l.82-1.6c.57-1.12,1.07-2.09,1.44-2.79.16-.3.29-.55.38-.74,0,0,.18-.34.19-.37,0,0,0,0,0,0,.61-1.01,1.72-1.68,2.99-1.68h9.05s.02,0,.03,0c1.91.02,3.46,1.57,3.46,3.49,0,.32-.04.64-.13.93l-8.76,17.68h0s0,0,0,0c0,0,0,0,0,0h0s-.03.06-.05.11c-.29.62-1.5,3.57-.27,7.06l.17.43.59,1.4,7.96,16.12s.11.23.11.23Z"/>
+      <path fill="url(#b2b-grad)" d="M124.36,25.2c-.1-1.17-.27-2.35-.52-3.49-.25-1.19-.59-2.35-.99-3.49-.29-.81-.61-1.62-.98-2.4-.17-.36-.35-.73-.55-1.09-.63-1.21-1.36-2.39-2.16-3.49-.26-.35-.52-.7-.79-1.04-.29-.35-.57-.69-.87-1.02-.43-.5-.9-.98-1.37-1.43-.4-.39-.83-.78-1.26-1.15-1-.86-2.07-1.64-3.19-2.33-.1-.08-.21-.14-.31-.2-1.12-.69-2.29-1.29-3.51-1.81-1.13-.5-2.31-.9-3.51-1.22-.34-.09-.69-.18-1.03-.26-.61-.14-1.23-.26-1.84-.36-.21-.04-.42-.07-.64-.09-1.16-.17-2.33-.25-3.51-.26-1.16,0-2.33.06-3.49.21-.96.12-1.93.29-2.88.51-.21.04-.42.09-.63.14-1.2.31-2.37.69-3.51,1.16-1.13.46-2.24,1-3.31,1.62-.07.03-.13.06-.2.1-.26.16-.51.3-.76.47-.95.6-1.88,1.26-2.75,1.98-.59.47-1.15.98-1.68,1.5-.64.63-1.25,1.26-1.82,1.94-.43.51-.83,1.02-1.23,1.55-.81,1.11-1.54,2.28-2.18,3.49-.04.07-.07.13-.1.2-.43.85-.82,1.72-1.17,2.62-.08.22-.17.46-.25.68-.4,1.15-.74,2.31-.99,3.49-.23,1.15-.42,2.32-.51,3.49-.09,1.16-.1,2.32-.05,3.49.05,1.17.18,2.33.39,3.49.21,1.17.5,2.35.86,3.49.01.04.03.08.04.12.36,1.16.82,2.28,1.34,3.36.1.25.22.48.34.72.5.95,1.04,1.89,1.66,2.78.56.86,1.19,1.67,1.85,2.45.3.35.61.7.94,1.04.79.86,1.66,1.65,2.57,2.4.47.38.94.74,1.42,1.09.33.23.65.46.98.66.36.23.73.47,1.11.68,1.12.66,2.29,1.24,3.51,1.73.36.14.73.29,1.09.42.8.29,1.6.52,2.41.73,1.15.3,2.32.52,3.51.66,1.09.13,2.19.2,3.3.2h.2c.87,0,1.76-.05,2.63-.14.29-.03.59-.06.87-.1,1.19-.17,2.36-.4,3.51-.72.66-.18,1.32-.39,1.95-.63.52-.18,1.04-.39,1.55-.6,1.21-.52,2.38-1.12,3.51-1.81.56-.34,1.11-.7,1.64-1.08.64-.46,1.26-.94,1.86-1.46.55-.46,1.07-.94,1.58-1.45.2-.2.38-.39.56-.59.48-.5.94-1.02,1.37-1.55.51-.63.99-1.28,1.43-1.94.74-1.11,1.41-2.27,1.99-3.49l.08-.16c.26-.57.51-1.16.74-1.76.2-.52.38-1.04.55-1.56.36-1.15.65-2.32.86-3.49.21-1.16.34-2.32.39-3.49.04-.87.04-1.75,0-2.62-.01-.29-.04-.59-.05-.87ZM97.21,39.8c-6.78,0-12.26-5.49-12.26-12.26s5.49-12.26,12.26-12.26,12.26,5.49,12.26,12.26-5.49,12.26-12.26,12.26Z"/>
+      <path fill="url(#b2b-grad)" d="M148.29,4.05v45.4c0,1.92-1.54,3.47-3.46,3.49-.01,0-.02,0-.03,0h-9.22c-1.36,0-2.53-.77-3.11-1.9-.06-.13-.12-.26-.17-.39l-.03-.07c-.08-.23-.14-.48-.16-.73-.02-.13-.02-.26-.02-.4V4.05c0-.14,0-.27.02-.4.04-.36.14-.71.28-1.03,0,0,0,0,0,0,.06-.13.12-.25.19-.36,0,0,0,0,0,0,.61-1.01,1.72-1.68,2.99-1.68h9.22s.02,0,.03,0c1.91.02,3.46,1.57,3.46,3.49Z"/>
+      <path fill="url(#b2b-grad)" d="M202.48,3.49v45.4c0,1.92-1.54,3.47-3.46,3.49-.01,0-.02,0-.03,0h-9.22c-1.36,0-2.53-.77-3.11-1.9-.06-.13-.12-.26-.17-.39l-.03-.07c-.08-.23-.14-.48-.16-.73-.02-.13-.02-.26-.02-.4V3.49c0-.14,0-.27.02-.4.04-.36.14-.71.28-1.03,0,0,0,0,0,0,.06-.13.12-.25.19-.36,0,0,0,0,0,0,.61-1.01,1.72-1.68,2.99-1.68h9.22s.02,0,.03,0c1.91.02,3.46,1.57,3.46,3.49Z"/>
+      <path fill="url(#b2b-grad)" d="M69.97,2.86s0,0,0,0h0s-.14-.4-.14-.4c0,0,0,0,0,0,0,0,0,0,0,0l-.03-.09s0,0,0,0c-.03-.07-.07-.14-.11-.21h0s-.02-.03-.03-.05c-.03-.05-.07-.11-.1-.16-.02-.03-.05-.07-.07-.1-.01-.02-.03-.04-.05-.06-.02-.03-.05-.07-.08-.1-.05-.07-.11-.13-.17-.19-.02-.02-.04-.05-.07-.07-.04-.04-.08-.07-.12-.11,0,0,0,0,0,0-.04-.03-.07-.06-.11-.09-.04-.03-.08-.07-.12-.1-.04-.03-.09-.06-.13-.09-.03-.02-.05-.04-.08-.05-.03-.02-.05-.03-.08-.05-.01,0-.02-.01-.04-.02-.01,0-.02-.01-.04-.02,0,0-.01,0-.02-.01-.02-.01-.04-.03-.07-.04,0,0-.01,0-.02-.01-.02-.01-.04-.02-.06-.03-.04-.02-.07-.04-.11-.05,0,0-.02,0-.03-.01-.02,0-.03-.01-.04-.02,0,0,0,0,0,0-.06-.02-.11-.05-.17-.07-.05-.02-.11-.04-.16-.05-.04-.01-.07-.02-.11-.03-.02,0-.03,0-.05-.01-.05-.01-.11-.03-.16-.04-.05,0-.09-.02-.14-.03-.02,0-.03,0-.05,0-.05,0-.1-.01-.15-.02-.06,0-.12-.01-.17-.01h0c-.06,0-.12,0-.18,0h-9.89c-1.89,0-3.43,1.54-3.43,3.43,0,.21.02.42.06.63.03.15.07.3.11.45,0,0,0,0,0,.01l.06.16s0,.01,0,.02l3.53,9.67s0,.01,0,.02c.01.04.03.08.04.12,0,0,0,.01,0,.02.02.04.03.09.05.13h0s.01.03.01.03c.53,1.25,1.77,2.13,3.21,2.13,1.08,0,2.05-.49,2.69-1.27,0,0,.01-.01.02-.02.14-.19.26-.4.36-.61.03-.06.05-.12.08-.18.07-.16.14-.31.21-.47,1.3-2.88,2.96-5.56,4.92-7.99.19-.23.38-.47.57-.69.49-.59.78-1.34.78-2.17,0-.33-.05-.65-.14-.96Z"/>
+      <path fill="url(#b2b-grad)" d="M57.16,42.98c0,.22,0,.43-.02.64h0c-.21,3.77-2.24,7.06-5.23,8.99-1.19.77-2.53,1.32-3.96,1.61-.22.04-.45.07-.69.07-1.11,0-2.03-.4-2.68-1.3-.28-.38-.6-1.15-.6-1.15l-6.24-17.11L26.93,5.11s0-.01,0-.02l-.06-.16s0,0,0-.01c-.05-.14-.09-.29-.11-.45-.04-.2-.06-.41-.06-.63,0-1.89,1.53-3.43,3.43-3.43h9.88c1.36,0,2.53.79,3.09,1.94,0,0,0,0,0,0l.23.64s0,0,0,0c0,0,0,0,0,0h0s13.33,36.58,13.35,36.65h0c.32,1.05.49,2.17.49,3.33Z"/>
+      <path fill="url(#b2b-grad)" d="M30.47,42.98c0,.22,0,.43-.02.64h0c-.21,3.77-2.24,7.06-5.23,8.99-1.19.77-2.53,1.32-3.96,1.61-.22.04-.45.07-.69.07-1.11,0-2.03-.4-2.68-1.3-.28-.38-.6-1.15-.6-1.15l-6.24-17.11L.24,5.11s0-.01,0-.02l-.06-.16s0,0,0-.01c-.05-.14-.09-.29-.11-.45-.04-.2-.06-.41-.06-.63C0,1.95,1.53.41,3.43.41h9.88c1.36,0,2.53.79,3.09,1.94,0,0,0,0,0,0l.23.64s0,0,0,0c0,0,0,0,0,0h0s13.33,36.58,13.35,36.65h0c.32,1.05.49,2.17.49,3.33Z"/>
+    </g>
+  </defs>
+</svg>
+
+<main>
+
+<!-- ====== HERO ====== -->
+<section class="hero" id="hero">
+  <div class="lines-deco">
+    <svg viewBox="0 0 400 400" preserveAspectRatio="xMaxYMin meet">
+      <g stroke="#132F60" stroke-width="1" fill="none">
+        <path d="M400,0 L0,400"/><path d="M400,40 L40,400"/><path d="M400,80 L80,400"/>
+        <path d="M400,120 L120,400"/><path d="M400,160 L160,400"/><path d="M400,200 L200,400"/>
+        <path d="M400,240 L240,400"/><path d="M400,280 L280,400"/><path d="M400,320 L320,400"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="eyebrow-top eyebrow">Propuesta de alianza estratégica · Mayo 2026</div>
+    <div class="lockup-big">
+      <svg class="ln-svg" viewBox="0 0 1921 1080" style="color:var(--ink)"><use href="#ln-logo-paths"/></svg>
+      <span class="x">×</span>
+      <svg class="woki-svg" viewBox="0 0 202.48 54.72"><use href="#woki-logo-paths"/></svg>
+    </div>
+    <p class="sub">Convirtamos el beneficio gastronómico en una experiencia premium con data real.</p>
+  </div>
+  <div class="foot">
+    <span>Confidencial — Woki, 2026</span>
+    <span>Scrolleá ↓</span>
+  </div>
+</section>
+
+<!-- ====== CONTEXTO ====== -->
+<section class="contexto" id="contexto">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow muted">Contexto</div>
+      <h2 class="h-section" style="margin-top:14px">Gastronomía es una de las categorías más usadas del Club.</h2>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="num"><small>+</small>400</div><div class="lbl">marcas adheridas en todo el país.</div></div>
+      <div class="kpi"><div class="num"><small>+</small>3.500</div><div class="lbl">puntos de venta activos.</div></div>
+      <div class="kpi"><div class="num word">Restaurantes</div><div class="lbl">una de las verticales con mayor recurrencia de uso de credencial.</div></div>
+    </div>
+    <p class="hook"><span>Pero hay un problema que el modelo actual no resuelve.</span></p>
+  </div>
+</section>
+
+<!-- ====== PROBLEMA ====== -->
+<section class="problema" id="problema">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">El problema</div>
+      <h2 class="h-section" style="margin-top:14px">El beneficio LN es ciego para el restaurante hasta el momento del pago.</h2>
+      <p class="h-sub" style="margin-top:18px;color:var(--gray-meta)">Y eso le cuesta a las tres partes.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><i data-lucide="alert-triangle"></i></div>
+        <h4>Fricción en la redención</h4>
+        <p>El socio tiene que "pelear" el descuento frente a un mozo que muchas veces no sabe aplicarlo. Una mala experiencia es una mala renovación de suscripción.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><i data-lucide="user-x"></i></div>
+        <h4>Cero personalización</h4>
+        <p>El restaurante descubre al socio recién cuando llega o cuando paga. No puede preparar nada especial. El beneficio se ofrece, pero no se <em>honra</em>.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><i data-lucide="file-question"></i></div>
+        <h4>Data autodeclarada</h4>
+        <p>Hoy los restaurantes reportan transacciones manualmente. LN no tiene forma de auditar volumen real ni de medir ROI por comercio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MOCKUP LA CABRERA ====== -->
+<section class="mock-cliente" id="mock-cliente">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Experiencia del socio</div>
+      <div class="row" style="margin-top:14px">
+        <h2 class="h-section" style="max-width:18ch">Reservar con descuento, desde el sitio del Club.</h2>
+        <p class="sub-right">Hoy el socio llama o va a ciegas. Mañana reserva en 30 segundos y llega esperado.</p>
+      </div>
+    </div>
+
+    <div class="mock-frame">
+      <div class="b-chrome">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <div class="url"><b>club.lanacion.com.ar</b>/beneficios/la-cabrera</div>
+      </div>
+
+      <!-- LN dark topbar -->
+      <div class="ln-top">
+        <span class="item ln-mk"><b>LA NACION</b></span>
+        <span class="item">EN VIVO</span>
+        <span class="item">FOODIT</span>
+        <span class="item">CANCHALLENA</span>
+        <span class="item">BONVIVIR</span>
+        <span class="item">LN 104.9 + MÚSICA</span>
+      </div>
+
+      <!-- Club LN white header -->
+      <div class="ln-clubhead">
+        <button class="burger" aria-label="Menú"><i></i><i></i><i></i></button>
+        <a class="logo-ln" href="#" aria-label="Club LA NACION">
+          <svg viewBox="0 0 1921 1080" style="color:var(--ink)" aria-hidden="true"><use href="#ln-logo-paths"/></svg>
+        </a>
+        <div class="search"><i data-lucide="search"></i>Buscá en Club LA NACION</div>
+        <div class="cerca"><i data-lucide="map-pin"></i>Cerca mío</div>
+        <span class="suscribite">Suscribite por $1400</span>
+        <span class="login">Iniciar sesión</span>
+        <i data-lucide="bell" class="bell"></i>
+      </div>
+
+      <!-- Secondary menu -->
+      <div class="ln-menu">
+        <span class="it">Conocé Club LA NACION</span>
+        <span class="it">Códigos de descuento</span>
+        <span class="it">Mundo Black <i data-lucide="chevron-down"></i></span>
+        <span class="it">Calculá tu ahorro</span>
+        <span class="it">Hot Sale</span>
+        <span class="news"><i data-lucide="mail"></i>Newsletters</span>
+      </div>
+
+      <!-- Body -->
+      <div class="lc-body">
+        <!-- Left: hero + name -->
+        <div class="lc-left">
+          <button class="lc-share" aria-label="Compartir"><i data-lucide="share-2"></i></button>
+          <div class="lc-breadcrumb">
+            <a href="#">Club LA NACION</a><span class="sep">&gt;</span>
+            <a href="#">Beneficios</a><span class="sep">&gt;</span>
+            <a href="#">Gastronomía</a><span class="sep">&gt;</span>
+            <span class="current">Restaurantes</span>
+          </div>
+          <div class="lc-hero">
+            <span class="lc-hero-arrow l"><i data-lucide="chevron-left"></i></span>
+            <span class="lc-hero-arrow r"><i data-lucide="chevron-right"></i></span>
+            <div class="lc-hero-dots"><i class="on"></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="lc-meta">
+            <div class="lc-socials">
+              <a class="so" href="#" aria-label="Soporte"><i data-lucide="headphones"></i></a>
+              <a class="so" href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+              <a class="so" href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            </div>
+            <a href="#" class="lc-sitio">Sitio oficial</a>
+          </div>
+          <h3 class="lc-name">LA CABRERA</h3>
+          <p class="lc-desc">Lugar del buen comer por excelencia en Buenos Aires. Donde se destaca una alta calidad gastronómica y excelente parrilla con carne Argentina.</p>
+        </div>
+
+        <!-- Right: benefits + reservar -->
+        <div class="lc-right">
+          <h3>Beneficios</h3>
+          <p class="sub">Los descuentos que tiene <b>Club LA NACION</b> para vos.</p>
+
+          <div class="lc-discount">
+            <div class="pct">20<sup>%</sup><span class="off">OFF</span></div>
+            <div class="copy">
+              <div class="t">¡De descuento en el total de la factura!</div>
+              <div class="chip">Todos los días</div>
+            </div>
+          </div>
+          <p class="lc-discount-fine">Accedé al 20% de descuento en el total de la factura, todos los días, validando tu Credencial Virtual a través del DNI en el local.</p>
+
+          <button class="lc-reservar">
+            <i data-lucide="calendar-check"></i>
+            Reservar
+          </button>
+          <p class="lc-reservar-fine">Confirmación inmediata · 20% aplicado en la reserva</p>
+
+          <div class="lc-cond">
+            <h5>Condiciones de uso</h5>
+            <div class="grid">
+              <div class="row">
+                <div class="ic"><i data-lucide="credit-card"></i></div>
+                <div>
+                  <div class="k">Credenciales que aplica</div>
+                  <div class="chips"><span class="black">BLACK</span><span class="premium">PREMIUM</span><span class="classic">CLASSIC</span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="ic"><i data-lucide="help-circle"></i></div>
+                <div><div class="k">¿Qué necesito?</div><div class="v">Credencial y DNI</div></div>
+              </div>
+              <div class="row">
+                <div class="ic"><i data-lucide="globe"></i></div>
+                <div><div class="k">Modalidad de compra</div><div class="v">Presencial</div></div>
+              </div>
+              <div class="row">
+                <div class="ic"><i data-lucide="store"></i></div>
+                <div><div class="k">Sucursales adheridas</div><div class="v link">2 sucursales</div></div>
+              </div>
+              <div class="row">
+                <div class="ic"><i data-lucide="clock"></i></div>
+                <div><div class="k">Vigencia</div><div class="v">Del 01/10/2025 al 31/03/2027</div></div>
+              </div>
+              <div class="row">
+                <div class="ic"><i data-lucide="file-text"></i></div>
+                <div><div class="k">Legales</div><div class="v link">Términos y condiciones</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MOCKUP PANEL ====== -->
+<section class="mock-admin" id="mock-admin">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Experiencia del restaurante</div>
+      <h2 class="h-section" style="margin-top:14px;max-width:22ch">El socio LN deja de ser una sorpresa. Es una oportunidad.</h2>
+      <p class="h-sub" style="margin-top:18px;color:var(--gray-meta);max-width:48ch">El restaurante ve la reserva con todo el contexto — antes de que el socio llegue.</p>
+    </div>
+
+    <div class="frame-wrap">
+      <div class="resv-card">
+        <div class="resv-bar">
+          <span class="dot"></span>
+          Panel de reservas
+          <span class="url">admin.wokiapp.com</span>
+        </div>
+        <div class="resv-head">
+          <div class="avatar">MP</div>
+          <div class="who">
+            <div class="name">María Paula Rodríguez</div>
+            <div class="m">maria.rodriguez@gmail.com · +54 11 5...</div>
+          </div>
+          <div class="status">Confirmada</div>
+        </div>
+        <div class="resv-detail">
+          <div class="det"><div class="ic"><i data-lucide="clock"></i></div><div><div class="k">Hora</div><div class="v">21:30</div></div></div>
+          <div class="det"><div class="ic"><i data-lucide="users"></i></div><div><div class="k">Comensales</div><div class="v">4 personas</div></div></div>
+          <div class="det"><div class="ic"><i data-lucide="armchair"></i></div><div><div class="k">Mesa</div><div class="v sm">Mesa 12<br>Salón interior</div></div></div>
+        </div>
+
+        <div class="ln-badge">
+          <div class="top">
+            <svg class="ln-mini" viewBox="0 0 1921 1080" style="color:var(--ink)" aria-hidden="true"><use href="#ln-logo-paths"/></svg>
+            <span>Socio Club LA NACION</span>
+            <span class="sep">·</span>
+            <span class="tier">BLACK</span>
+          </div>
+          <div class="sub">Beneficio aplicado: <b>20% off</b> — pre-confirmado en la reserva.</div>
+        </div>
+
+        <div class="ctx">
+          <div class="lbl">Contexto del cliente</div>
+          <div class="tags">
+            <div class="tag celeste"><i data-lucide="cake"></i>Cumple en 5 días</div>
+            <div class="tag navy"><i data-lucide="repeat"></i>Recurrente · 4ta visita</div>
+            <div class="tag gray"><i data-lucide="history"></i>Última visita: hace 2 meses</div>
+          </div>
+        </div>
+
+        <div class="resv-foot">
+          <button class="btn-p">Asignar mesa preferencial</button>
+          <button class="btn-s">Enviar mensaje al cliente</button>
+        </div>
+      </div>
+
+      <div class="annot-stack">
+        <div class="annot">
+          <div class="k">Identificación visible</div>
+          <p>El restaurante ve al socio LN apenas se abre la reserva. Sin sorpresas, sin negociación al pagar.</p>
+        </div>
+        <div class="annot">
+          <div class="k">Contexto del cliente</div>
+          <p>Cumpleaños, recurrencia y tiempo desde la última visita convierten un descuento en una oportunidad de fidelización.</p>
+        </div>
+        <div class="annot">
+          <div class="k">Acciones operativas</div>
+          <p>Mesa preferencial, mensaje pre-llegada. El equipo recibe al socio listo, no improvisando.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== GANADORES ====== -->
+<section class="ganadores" id="ganadores">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Una sola integración</div>
+      <h2 class="h-section" style="margin-top:14px">Cuatro ganadores.</h2>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="top"><div class="ic"><i data-lucide="newspaper"></i></div><h4>Club LA NACION</h4></div>
+        <ul>
+          <li>Convierte un descuento en una experiencia.</li>
+          <li>Argumento de upsell hacia planes Premium y Black.</li>
+          <li>Data real de redención, sin reporte manual.</li>
+          <li>Menos fricción → mejor renovación.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="top"><div class="ic"><i data-lucide="utensils"></i></div><h4>El restaurante</h4></div>
+        <ul>
+          <li>Deja de sufrir el descuento: lo gestiona.</li>
+          <li>Dirige socios LN a slots de baja ocupación (yield).</li>
+          <li>Atención personalizada → mejor ticket y mejor review.</li>
+          <li>Cero conflicto de aplicación del beneficio.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="top"><div class="ic"><i data-lucide="user-check"></i></div><h4>El socio del Club</h4></div>
+        <ul>
+          <li>Reserva con un click, descuento confirmado.</li>
+          <li>Llega identificado, esperado, valorado.</li>
+          <li>Experiencia consistente con su expectativa Premium / Black.</li>
+        </ul>
+      </div>
+      <div class="card woki">
+        <div class="top"><div class="ic"><i data-lucide="zap"></i></div><h4>Woki</h4></div>
+        <ul>
+          <li>Distribución vía el programa de beneficios más grande del país.</li>
+          <li>Posicionamiento como infraestructura del programa gastro de LN.</li>
+          <li>Acceso al ecosistema de restaurantes adheridos al Club.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== UPSIDE ====== -->
+<section class="upside" id="upside">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Más allá del descuento</div>
+      <h2 class="h-section" style="margin-top:14px;max-width:24ch">Tu beneficio gana inteligencia: el restaurante lo activa donde mejor rinde.</h2>
+      <p class="h-sub" style="margin-top:18px;color:var(--gray-meta);max-width:60ch">Hoy el 20% se aplica indistintamente. Con Woki, cada restaurante decide cuándo y dónde activarlo — y vos medís exactamente qué resultado dio.</p>
+    </div>
+
+    <div class="split">
+      <div class="blk">
+        <h4>Yield management</h4>
+        <p>El restaurante dirige el beneficio LN a los momentos que necesita llenar. El socio recibe ofertas relevantes, el restaurante llena mesas vacías.</p>
+        <div class="yield-card">
+          <div class="head-row"><div></div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div><div>D</div></div>
+          <div class="row"><div class="h">13h</div><div class="cell lo"></div><div class="cell lo"></div><div class="cell lo"></div><div class="cell mid"></div><div class="cell hi"></div><div class="cell hi"></div><div class="cell hi"></div></div>
+          <div class="row"><div class="h">20h</div><div class="cell mid"></div><div class="cell lo"></div><div class="cell lo"></div><div class="cell mid"></div><div class="cell hi"></div><div class="cell full"></div><div class="cell mid"></div></div>
+          <div class="row"><div class="h">22h</div><div class="cell lo"></div><div class="cell mid"></div><div class="cell mid"></div><div class="cell hi"></div><div class="cell full"></div><div class="cell full"></div><div class="cell mid"></div></div>
+          <div class="legend">
+            <span><i style="background:var(--woki-celeste-soft);border:1px dashed var(--woki-celeste)"></i>Beneficio LN activo</span>
+            <span><i style="background:#22A35F"></i>Alta ocupación</span>
+            <span><i style="background:#0F7B3A"></i>Lleno</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="blk">
+        <h4>Data real para LN</h4>
+        <p>Reservas con credencial por restaurante, tipo de credencial, ticket promedio estimado, días y horarios pico, no-show, recurrencia. Todo automático — sin reportes manuales.</p>
+        <div class="dash">
+          <div class="kpi"><div class="v"><span class="pos">+</span>1.240</div><div class="k">Reservas con credencial LN este mes</div></div>
+          <div class="kpi"><div class="v">$48.500</div><div class="k">Ticket promedio estimado</div></div>
+          <div class="kpi"><div class="v">4,2%</div><div class="k">Tasa de no-show</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PLAN ====== -->
+<section class="plan" id="plan">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Cómo lo lanzamos</div>
+      <h2 class="h-section" style="margin-top:14px">Una activación en tres movimientos.</h2>
+    </div>
+    <div class="timeline">
+      <div class="node">
+        <div class="circle">1</div>
+        <h4>Integración silenciosa</h4>
+        <div class="when">Mes 1–2</div>
+        <div class="card">
+          <ul>
+            <li>Restaurantes que ya tienen Woki + LN integran primero.</li>
+            <li>El botón "Reservar" aparece solo en sus fichas del Club.</li>
+            <li>Los demás restos LN ven cómo sus competidores ganan visibilidad.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="node">
+        <div class="circle">2</div>
+        <h4>Comunicación conjunta</h4>
+        <div class="when">Mes 2–3</div>
+        <div class="card">
+          <ul>
+            <li>Comunicación oficial LN + Woki a la base de restos adheridos.</li>
+            <li>Landing co-branded para que se anoten los interesados.</li>
+            <li>Webinar conjunto: cómo maximizar la adhesión al Club.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="node">
+        <div class="circle">3</div>
+        <h4>Expansión</h4>
+        <div class="when">Mes 3+</div>
+        <div class="card">
+          <ul>
+            <li>Onboarding acelerado de los restos LN que se sumaron.</li>
+            <li>Reportes de impacto a LN: reservas, credenciales, ticket, reseñas.</li>
+            <li>Co-marketing en piezas del Club: "Restaurantes con reserva express".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="pie">Cada fase está pensada para generar pull, no push. Los restos llegan porque quieren la herramienta.</p>
+  </div>
+</section>
+
+<!-- ====== MODELO ====== -->
+<section class="modelo" id="modelo">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Modelo económico</div>
+      <h2 class="h-section" style="margin-top:14px;max-width:20ch">Una propuesta financieramente fácil de aprobar.</h2>
+    </div>
+    <div class="opts">
+      <div class="opt reco">
+        <div class="reco-tag">Recomendada</div>
+        <div class="letra">Opción A</div>
+        <h4>Sin costo para LN</h4>
+        <ul>
+          <li>Woki integra y opera la solución sin cobrarle a LN.</li>
+          <li>Monetiza vía la suscripción que ya pagan los restaurantes a Woki.</li>
+          <li>Permite a LN aprobar internamente con cero riesgo.</li>
+        </ul>
+      </div>
+      <div class="opt">
+        <div class="letra">Opción B</div>
+        <h4>Revenue share sobre cubiertos</h4>
+        <ul>
+          <li>Pequeño fee por cubierto generado a través del canal LN.</li>
+          <li>Útil si LN quiere capturar valor financiero directo.</li>
+        </ul>
+      </div>
+      <div class="opt">
+        <div class="letra">Opción C</div>
+        <h4>Co-inversión en marketing</h4>
+        <ul>
+          <li>Cada parte aporta presupuesto para la campaña conjunta de lanzamiento.</li>
+          <li>Útil para amplificar el lanzamiento en piezas premium.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="closer">Sugerimos arrancar con la Opción A y revisar a los 6 meses con datos en la mano.</p>
+  </div>
+</section>
+
+<!-- ====== CIERRE ====== -->
+<section class="cierre" id="cierre">
+  <div class="wrap">
+    <h2 class="quote">Un click. Una mesa esperando. <em>Un socio que vuelve.</em></h2>
+    <p class="sub">Eso es el descuento del Club, hecho experiencia. Y en gastronomía, las pequeñas diferencias hacen los grandes restaurantes.</p>
+    <div class="foot">
+      <svg class="ln-svg" viewBox="0 0 1921 1080" style="color:var(--ink)"><use href="#ln-logo-paths"/></svg>
+      <span class="x">×</span>
+      <svg class="woki-svg" viewBox="0 0 202.48 54.72"><use href="#woki-logo-paths"/></svg>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <span>Confidencial · Woki, 2026</span>
+    <span><a href="mailto:partnerships@wokiapp.com">partnerships@wokiapp.com</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const initLucide = () => { if(window.lucide){ window.lucide.createIcons(); return true; } return false; };
+  if(!initLucide()){
+    const id = setInterval(()=>{ if(initLucide()) clearInterval(id); }, 60);
+  }
+})();
+</script>
+</body>
+</html>

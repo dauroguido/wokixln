@@ -1,0 +1,24 @@
+# Material interno / confidencial
+brief-presentacion-ln-woki.md
+*.jpg
+*.jpeg
+*.png
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencias (por si en el futuro se suma build)
+node_modules/
+dist/
+.cache/
